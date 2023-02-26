@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <meta property="og:description" content="Portafolio personal de Ian Gabriel Rojas Sequeira">
+    <meta property="og:title" content="Portfolio - Ian Rojas">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ianrojas19.github.io/">
     <link rel="shortcut icon" href="/images/logo-portfolio-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
     <title>Portfolio - Ian Rojas</title>
 </head>
 
@@ -20,18 +24,22 @@
     </header>
 
     <div id="image-me"><img src="/images/me.jpeg" alt="I'm him :)"></div>
+    
     <div id="presentation">
         <h3>
             Hola, soy Ian Rojas y construyo páginas web.</h3>
-        <p>Soy estudiante del Colegio Vocacional de Artes y Oficios en la carrera de Desarrollo Web y actualmente estoy participando en el proyecto
+        <p>Soy estudiante del Colegio Vocacional de Artes y Oficios en la carrera de Desarrollo Web y actualmente
+            estoy participando en el proyecto
             Oracle ONE en Alura Latam.</p>
     </div>
+    
     <div id="contact">
         <ul id="media-cn">
-            <div id="linkedin" class="icon-media" ><img src="/images/linkedin.svg" alt="Ir a mi Linkedin"></div>
-            <div id="instagram" class="icon-media"><img src="/images/instagram.svg" alt="Ir a mi Instagram"></div>
-            <div id="gmail" class="icon-media" onclick="copyEmail()"><img src="/images/gmail.svg" alt="Ir a mi Gmail"></div>
-            <div id="github" class="icon-media"><img src="/images/github.svg" alt="Ir a mi Github"></div>
+            <li id="linkedin" class="icon-media"><img src="/images/linkedin.svg" alt="Ir a mi Linkedin"></li>
+            <li id="instagram" class="icon-media"><img src="/images/instagram.svg" alt="Ir a mi Instagram"></li>
+            <li id="gmail" class="icon-media" onclick="copyEmail()"><img src="/images/gmail.svg" alt="Ir a mi Gmail">
+            </li>
+            <li id="github" class="icon-media"><img src="/images/github.svg" alt="Ir a mi Github"></li>
         </ul>
     </div>
 
@@ -48,7 +56,6 @@
 
     <div id="skills" style="padding-bottom: 50px;">
         <h3>Skills</h3>
-
         <div id="frontend">
             <div class="tech-container">
                 <img src="/images/HTML.svg" alt="HTML 5">
@@ -139,16 +146,16 @@
 
     <div id="contact-me">
         <h3>Contacto</h3>
-        <p>¿Quieres contactarme? Complete el siguiente 
-            formulario y me pondré en 
+        <p>¿Quieres contactarme? Complete el siguiente
+            formulario y me pondré en
             contacto con usted lo antes posible.
         </p>
+       
         <form id="form-main" method="post" action="submit.php">
-            
             <label for="email">Correo electrónico:</label>
             <input type="email" id="email" name="email" autocomplete="off" required>
             <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" name="asunto" rows="5" autocomplete="off" required></input>
+            <input type="text" id="asunto" name="asunto" autocomplete="off" required>
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
             <input id="btn-sbm" type="submit" value="Enviar" style="margin-top: 30px;">
