@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/images/logo-portfolio-removebg-preview.png" type="image/x-icon">
+    <title>Portfolio - Ian Rojas</title>
+</head>
+
+<body>
+    <header>
+        <div id="initial">
+            <img src="/images/logo-portfolio-removebg-preview.png" alt="This is my Portfolio" style="height: 30px;">
+            <h1 id="name" style="font-size: 18px;">ianrs.dev</h1>
+        </div>
+        <h2 id="cv">Curriculum Vitae ◄</h2>
+    </header>
+
+    <div id="image-me"><img src="/images/me.jpeg" alt="I'm him :)"></div>
+    <div id="presentation">
+        <h3>
+            Hola, soy Ian Rojas y construyo páginas web.</h3>
+        <p>Soy estudiante de COVAO en la carrera de Desarrollo Web y actualmente estoy participando en el proyecto
+            Oracle ONE en Alura Latam.</p>
+    </div>
+    <div id="contact">
+        <ul id="media-cn">
+            <div class="icon-media"><img src="/images/linkedin.svg" alt="Ir a mi Linkedin"></div>
+            <div class="icon-media"><img src="/images/instagram.svg" alt="Ir a mi Instagram"></div>
+            <div class="icon-media"><img src="/images/gmail.svg" alt="Ir a mi Gmail"></div>
+            <div class="icon-media"><img src="/images/github.svg" alt="Ir a mi Github"></div>
+        </ul>
+    </div>
+
+    <div id="about">
+        <h3>Sobre mí</h3>
+        <p>Soy un desarrollador web apasionado por el trabajo en equipo y la dirección de proyectos. Soy
+            proactivo y siempre busco proponer soluciones innovadoras para cualquier desafío que se presente.</p>
+        <p>Me encanta aprender por mi cuenta y estar al tanto de las últimas tendencias en desarrollo web. Me siento
+            cómodo
+            asumiendo retos y me gusta buscar oportunidades para crecer profesionalmente.</p>
+        <p>Disfruto colaborar con mis compañeros de equipo, liderar proyectos y asumir nuestros desafíos con
+            entusiasmo.</p>
+    </div>
+
+    <div id="skills">
+        <h3>Skills</h3>
+
+        <div id="frontend">
+            <div class="tech-container">
+                <img src="/images/HTML.svg" alt="HTML 5">
+                <p>HTML5</p>
+            </div>
+            <div class="tech-container">
+                <img src="/images/CSS.svg" alt="CSS 3">
+                <p>CSS3</p>
+            </div>
+        </div>
+
+        <div id="program-lang">
+            <div class="tech-container">
+                <img src="/images/PHP.svg" alt="PHP">
+                <p>PHP</p>
+            </div>
+            <div class="tech-container">
+                <img src="/images/js.svg" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+        </div>
+
+        <div id="frameworks">
+            <div class="tech-container">
+                <img src="/images/Bootstrap_logo.svg.png" style="margin-bottom: 20px;" alt="Boostrap">
+                <p>Boostrap</p>
+            </div>
+            <div class="tech-container">
+                <img src="/images/REACTJS.svg" alt="ReactJS">
+                <p>ReactJS</p>
+            </div>
+        </div>
+        <div id="CMS">
+            <div class="tech-container" style="margin-top: 15px;">
+                <img src="/images/WP.svg" alt="PHP">
+                <p>WordPress</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="education">
+        <h3>Formacion academica</h3>
+        <div class="academy-container">
+            <div class="inst-img">
+                <img src="/images/COVAO.jpg" alt="COVAO" style="height: 100px;">
+            </div>
+            <div class="ad-info">
+                <p>Tecnico en Desarrollo Web</p>
+                <p>2024</p>
+            </div>
+            <p class="ins-name">Colegio Vocacional de Artes y Oficios</p>
+        </div>
+        <div class="academy-container">
+            <div class="inst-img">
+                <img src="/images/ALURA.png" alt="ALURA" style="height: 100px;">
+            </div>
+            <div class="ad-info">
+                <p>Formacion Desarrollo Front-end</p>
+                <p class="year">2023</p>
+            </div>
+            <p class="ins-name">Alura + Oracle Next Education</p>
+        </div>
+        <div class="academy-container">
+            <div class="inst-img">
+                <img src="/images/GOOGLE.png" alt="GOOGLE" style="width:210px; height: 200px;">
+            </div>
+            <div class="ad-info">
+                <p>Introduccion al Desarrollo Web</p>
+                <p class="year">2024</p>
+            </div>
+            <p class="ins-name">Google Activate</p>
+        </div>
+    </div>
+
+    <div id="projects" style="margin-top: 40px;">
+        <h3 style="margin:0; margin-top: 20px; font-size: 22px;">Proyectos</h3>
+        <div class="project">
+            <div class="prj-img">
+                <img src="/images/PROJ-1.png" alt="Encriptador de texto RESPONSIVE">
+            </div>
+            <p class="prj-name">Encriptador de Texto (responsive)</p>
+        </div>
+
+        <!-- control for project 1 -->
+        <div class="btn-see-prj">
+            <div class="btn-container" style="margin-right: 30px;">
+                <a href="" target="_blank">Visitar Repositorio</a>
+            </div>
+            <div class="btn-container">
+                <a href="#">Ver proyecto</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact-me">
+        <h3>Contacto</h3>
+        <p>¿Quieres contactarme? Complete el siguiente 
+            formulario y me pondré en 
+            contacto con usted lo antes posible.
+        </p>
+        <form id="form-main" method="post" action="submit.php">
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" autocomplete="off" required>
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" rows="5" autocomplete="off" required></input>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <input id="btn-sbm" type="submit" value="Enviar" style="margin-top: 30px;">
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
