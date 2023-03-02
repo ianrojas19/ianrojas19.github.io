@@ -531,3 +531,9 @@ header #cv {
     width: 99%;
     min-width: 99%;
 }
+
+#email:-webkit-autofill{
+    -webkit-text-fill-color:rgb(242, 242, 242);
+    -webkit-box-shadow: 0 0 0 1000px #785195 inset;
+    border-radius: 0px;
+}
