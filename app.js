@@ -1,19 +1,20 @@
+import jsPDF from 'jspdf';
 
 linkedin.addEventListener("click", function () {
     let linkedin = document.getElementById("linkedin");
     window.open("https://www.linkedin.com/in/ian-gabriel-rojas-sequeira-303643258/");
-}); 
+});
 
 instagram.addEventListener("click", function () {
     let instagram = document.getElementById("instagram");
     window.open("https://www.instagram.com/ianrs.dev/");
-}); 
+});
 
 
 github.addEventListener("click", function () {
     let github = document.getElementById("github");
     window.open("https://github.com/ianrojas19");
-}); 
+});
 
 function copyEmail() {
     let email = "ian.rsq@gmail.com"
@@ -31,7 +32,19 @@ function copyEmail() {
     notification.style.width = "160px";
     notification.style.textAlign = "center";
     document.body.appendChild(notification);
-    setTimeout(function(){
-      notification.parentNode.removeChild(notification);
+    setTimeout(function () {
+        notification.parentNode.removeChild(notification);
     }, 2000);
-  }
+}
+
+let curriculum = getElementById("cv");
+
+curriculum.addEventListener("click", function () {
+    const pdf = new jsPDF();
+    const content = document.querySelector('#content');
+    pdf.html(content, {
+        callback: function () {
+            pdf.save('hes-resume-cover-letter-guide.pdf');
+        }
+    });
+})

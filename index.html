@@ -10,6 +10,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ianrojas19.github.io/">
     <link rel="shortcut icon" href="/images/logo-portfolio-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/style.css">
     <title>Portfolio - Ian Rojas</title>
 </head>
@@ -24,7 +25,7 @@
     </header>
 
     <div id="image-me"><img src="/images/me.jpeg" alt="I'm him :)"></div>
-    
+
     <div id="presentation">
         <h3>
             Hola, soy Ian Rojas y construyo páginas web.</h3>
@@ -32,7 +33,7 @@
             estoy participando en el proyecto
             Oracle ONE en Alura Latam.</p>
     </div>
-    
+
     <div id="contact">
         <ul id="media-cn">
             <li id="linkedin" class="icon-media"><img src="/images/linkedin.svg" alt="Ir a mi Linkedin"></li>
@@ -57,33 +58,33 @@
     <div id="skills" style="padding-bottom: 50px;">
         <h3>Skills</h3>
         <div id="frontend">
-            <div class="tech-container">
+            <div class="tech-container"  data-aos="zoom-in-down" data-aos-duration="1000">
                 <img src="/images/HTML.svg" alt="HTML 5">
                 <p>HTML5</p>
             </div>
-            <div class="tech-container">
+            <div class="tech-container"   data-aos="zoom-in-down" data-aos-duration="1000">
                 <img src="/images/CSS.svg" alt="CSS 3">
                 <p>CSS3</p>
             </div>
         </div>
 
         <div id="program-lang">
-            <div class="tech-container">
+            <div class="tech-container"  data-aos="zoom-in-down" data-aos-duration="1000">
                 <img src="/images/PHP.svg" alt="PHP">
                 <p>PHP</p>
             </div>
-            <div class="tech-container">
+            <div class="tech-container"  data-aos="zoom-in-down" data-aos-duration="1000">
                 <img src="/images/js.svg" alt="JavaScript">
                 <p>JavaScript</p>
             </div>
         </div>
 
         <div id="frameworks">
-            <div class="tech-container">
+            <div class="tech-container"  data-aos="zoom-in-down" data-aos-duration="1000">
                 <img src="/images/Bootstrap_logo.svg.png" style="margin-bottom: 20px;" alt="Boostrap">
                 <p>Boostrap</p>
             </div>
-            <div class="tech-container">
+            <div class="tech-container"  data-aos="zoom-in-down" data-aos-duration="1000">
                 <img src="/images/REACTJS.svg" alt="ReactJS">
                 <p>ReactJS</p>
             </div>
@@ -124,7 +125,7 @@
         </div>
     </div>
 
-    <div id="projects" style="margin-top: 40px;">
+    <div id="projects" style="margin-top: 40px;" >
         <h3 style="margin:0; margin-top: 20px; font-size: 22px;">Proyectos</h3>
         <div class="project">
             <div class="prj-img">
@@ -150,7 +151,7 @@
             formulario y me pondré en
             contacto con usted lo antes posible.
         </p>
-       
+
         <form id="form-main" method="post" action="submit.php">
             <label for="email">Correo electrónico:</label>
             <input type="email" id="email" name="email" autocomplete="on" required>
@@ -164,6 +165,11 @@
 
 
     <script src="/app.js"></script>
+    <script src="https://kit.fontawesome.com/0cf3687c78.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
