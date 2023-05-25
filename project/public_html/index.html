@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/project/public_html/css/general.css">
     <link rel="stylesheet" href="/project/public_html/css/index.css">
-   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZNTLZ09311"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZNTLZ09311"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -41,8 +41,13 @@
                 alt="Logo de la empresa Importadora Química Del Norte S.A" title="Logo de Importadora Química S.A">
         </a>
         <nav>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" id="onoff-nav" class="toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
             <ul id="ul-navigation">
-                <button class="toggle"></button>
                 <li class="navi-item"><a id="active" href="#">Inicio</a></li>
                 <div class="dropdown">
                     <button itemid="drop-productos" class="dropdown-toggle" id="dropdownMenuButton">Productos<span><svg
@@ -71,9 +76,9 @@
 
     <main id="landing-page-index">
         <section id="redirect-principal">
-            
+
         </section>
-        <section id="nosotros"data-aos="fade-up" data-aos-duration="700">
+        <section id="nosotros" data-aos="fade-up" data-aos-duration="700">
             <h2></h2>
         </section>
         <section id="productos" data-aos="fade-up" data-aos="fade-down" data-aos-duration="700">
@@ -136,11 +141,11 @@
         </div>
     </footer> -->
 
-    <script src="/js/carrusel.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+        </script>
+        <script src="/js/animations.js"></script>
 </body>
 
 </html>
