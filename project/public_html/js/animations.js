@@ -1,15 +1,9 @@
-let label = document.getElementById('onoff-nav');
-let nav = document.getElementById('ul-navigation');
-let body = document.body;
+var checkbox = document.getElementById('checkbox');
+var nav = document.getElementById('ul-navigation');
+var body = document.body;
 
-const togglenav = () => {
-  if (label.checked) { // Corregido: Utilizar label.checked en lugar de label.click()
-    nav.style.clipPath = 'polygon(0 0, 100% 0, 100% 100%, 0 100%)';
-    body.style.backgroundColor = 'black';
-  } else {
-    nav.style.clipPath = 'polygon(0 0, 100% 0, 100% 0, 0 0)';
-    body.style.backgroundColor = '';
-  }
+const togglenav = () =>{
+    body.style.backgroundColor = 'black'
 }
 
-label.addEventListener("click", togglenav); // Corregido: Usar label.addEventListener en lugar de checkbox.addEventListener
+checkbox.addEventListener ("click", togglenav)
