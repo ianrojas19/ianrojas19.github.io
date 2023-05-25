@@ -4,7 +4,7 @@
 header {
     display: flex;
     flex-direction: row;
-    padding: 10px 3%;
+    padding: 10px 5%;
     height: 150px;
     border-bottom: 2px #dadada solid;
     position: fixed;
@@ -31,7 +31,7 @@ header #home {
     position: relative;
     top: 3px;
     justify-content: center;
-    width: 35%;
+    width: fit-content;
 }
 
 /* ESTILOS DEL MAIN DEL NAV DE LA PAGINA*/
@@ -44,12 +44,12 @@ nav {
 nav ul {
     display: flex;
     width: 100%;
-    gap: 40px;
+    gap: 5%;
     height: 100%;
     align-content: center;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 
