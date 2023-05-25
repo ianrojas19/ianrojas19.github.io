@@ -1,0 +1,54 @@
+
+
+/*//////////////////////////////////////////////////////////////////
+[ REBOOT ]*/
+*, *:before, *:after {
+	margin: 0px; 
+	padding: 0px; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body, html {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	height: 100%;
+	background-color: #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*---------------------------------------------*/
+a:focus {outline: none;}
+a:hover {text-decoration: none;}
+
+/* ------------------------------------ */
+h1,h2,h3,h4,h5,h6,p {margin: 0px;}
+
+ul, li, a{
+	margin: 0px;
+	list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* ------------------------------------ */
+input, textarea, label {
+	display: block;
+	outline: none;
+	border: none;
+}
+
+/* ------------------------------------ */
+button {
+	outline: none;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+button:focus {outline: none;}
+
+iframe {border: none;}
