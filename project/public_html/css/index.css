@@ -90,7 +90,7 @@ nav #active {
 .dropdown:hover {
     color: #4c6ddae9;
 
-    #arrow {
+    .arrow-enable {
         position: relative;
         top: 3px;
         transform: rotateX(180deg);
@@ -230,9 +230,30 @@ main {
 
     }
 
-    #arrow {
+    .dropdown span{
+        position: absolute;
+        top: 1px;
+        right: 0;
+        margin-right: 8%;
+        transition: 0.5s all ease;
+    }
+
+    .dropdown:hover {
+        .arrow-enable {
+            position: relative;
+            top: 0px;
+            transform: rotateX(0deg);
+            transition: 0.5s all ease;
+            stroke: #2764e8e9;
+        }
+    }
+
+    .dropdown:hover .dropdown-menu {
         display: none;
     }
+
+    
+    
 
     nav ul li,
     nav ul div {
