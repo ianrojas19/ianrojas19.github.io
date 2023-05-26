@@ -50,7 +50,7 @@
             <ul id="ul-navigation" class="disable">
                 <li class="navi-item"><a id="active" href="#">Inicio</a></li>
                 <div class="dropdown">
-                    <button itemid="drop-productos" class="dropdown-toggle" id="dropdownMenuButton">Productos<span><svg
+                    <button itemid="drop-productos" class="dropdown-toggle" id="dropdownMenuButton">Productos<span id="icon-drop-prod" class="inactive-prod-list"><svg
                                 id="arrow" class="arrow-enable" xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-chevron-down" width="24" height="20"
                                 viewBox="0 0 24 22" stroke-width="3.7" stroke="#4c6ddae9" fill="none"
@@ -58,7 +58,7 @@
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M6 9l6 6l6 -6" />
                             </svg></span></button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div id="prod-types-menu" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="https://uiverse.io/switches?page=1">Productos farmacéuticos</a>
                         <a class="dropdown-item" href="#seccion3">Productos alimenticios</a>
                         <a class="dropdown-item" href="#seccion2">Productos industriales</a>
@@ -67,7 +67,7 @@
                         <a class="dropdown-item" href="#seccion3">Productos para piscinas</a>
                     </div>
                 </div>
-                <li class="navi-item"><a href="#">Nosotros</a></li>
+                <li id="navi-item-down" class="navi-item"><a href="#">Nosotros</a></li>
                 <li class="navi-item"><a href="#">Reclutamiento</a></li>
                 <li class="navi-item"><a href="#">Descargables</a></li>
             </ul>
@@ -76,22 +76,22 @@
 
     <main id="landing-page-index">
         <section id="redirect-principal">
-            <div id="presentation">
+            <div id="presentation" data-aos="fade-up" data-aos-duration="700">
                 <h1 >Importación de productos quimicos de calidad mundial</h1>
                 <p >"Importadora Química del Norte S.A es una empresa líder en el sector de importación y distribución de
                     productos químicos, comprometida en ofrecer soluciones de alta calidad a nuestros clientes. Nuestro
                     enfoque se centra en la selección minuciosa de proveedores internacionales reconocidos, lo que nos
                     permite asegurar la excelencia y confiabilidad de nuestros productos."</p>
-                <div id="redirects" data-aos="fade-up">
-                    <a id="redirect1" href="#">Nosotros</a>
-                    <a id="redirect2" href="#">Ver productos</a>
+                <div>
+                    <a id="redirect1" href="#" >Nosotros</a>
+                    <a id="redirect2" href="#" data-aos="fade-up" data-aos-duration="1000">Ver productos</a>
                 </div>
             </div>
         </section>
         <section id="nosotros" data-aos="fade-up" data-aos-duration="700">
             <h2></h2>
         </section>
-        <section id="productos" data-aos="fade-up" data-aos="fade-down" data-aos-duration="700">
+        <section id="productos" data-aos="fade-up" data-aos-duration="700">
 
         </section>
     </main>
