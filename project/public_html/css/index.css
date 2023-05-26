@@ -28,7 +28,6 @@ header img {
 header #home {
     display: inline-flex;
     position: relative;
-    top: 3px;
     justify-content: center;
     width: fit-content;
 }
@@ -113,7 +112,7 @@ nav #active {
     width: 220px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 3;
-    
+
 }
 
 .dropdown-menu a {
@@ -184,7 +183,7 @@ main {
     margin-top: 50px;
     gap: 50px;
     align-items: center;
-    
+
 }
 
 #redirect-principal #presentation {
@@ -206,6 +205,7 @@ main {
     display: inline;
     color: #f1f1f1;
     font-size: 55px;
+    font-weight: bolder;
     width: 100%;
     max-width: 915px;
     margin: 0 auto;
@@ -216,15 +216,15 @@ main {
     display: block;
     width: 100%;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.7;
     width: 100%;
-    max-width: 1000px;
+    max-width: 700px;
     text-align: center;
     margin: 0 auto;
 }
 
-#redirect-btns{
+#redirect-btns {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -237,7 +237,8 @@ main {
 
 
 
-#redirect-principal #redirect1, #redirect-principal #redirect2  {
+#redirect-principal #redirect1,
+#redirect-principal #redirect2 {
     display: grid;
     align-items: center;
     text-align: center;
@@ -245,7 +246,6 @@ main {
     width: 90%;
     font-size: 19px;
     color: white;
-    
     transition: 0.2s all;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.183);
@@ -268,7 +268,7 @@ main {
 #redirect-principal #redirect2:hover {
     background-color: rgba(0, 153, 255, 0.909) !important;
     transform: scale(1.02);
-    
+
 }
 
 #nosotros {
@@ -339,15 +339,15 @@ main {
     }
 
     .enable {
-            display: flex !important;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            height: 250px;
-            justify-content: flex-start;   
-            gap: 18px;  
-            padding-top: 18px; 
+        display: flex !important;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        height: 250px;
+        justify-content: flex-start;
+        gap: 18px;
+        padding-top: 18px;
     }
 
-    #navi-item-down{
+    #navi-item-down {
         transition: 0.4s all;
     }
 
@@ -379,16 +379,14 @@ main {
 
     .dropdown-menu a {
         color: rgb(143, 143, 143);
-        
         text-decoration: none;
         display: block;
         font-family: 'Varela Round', sans-serif;
         border-bottom: #3a333315 0px solid;
         background-color: white;
         transition: 0.2s all ease;
-        font-size: 12px;
-        padding: 16px 16px 16px 6px;
         font-size: 13px;
+        padding: 16px 16px 16px 6px;
     }
 
     .dropdown-menu {
@@ -401,7 +399,7 @@ main {
         z-index: 3;
         left: 0px;
         height: fit-content;
-        max-height: 250px;        
+        max-height: 265px;
     }
 
     nav ul li,
@@ -420,10 +418,8 @@ main {
         align-items: center;
         color: #2764e8e9 !important;
         background-color: #ffffff;
-        font-size: 11px;
+        font-size: 13px;
     }
-
-
 
     .bars {
         display: block;
@@ -503,6 +499,35 @@ main {
         width: 100%;
         margin: 0 auto;
         text-align: center;
+
+    }
+
+    #redirect-principal #presentation p {
+        display: block;
+        ;
+        font-size: 17px;
+        line-height: 1.8;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #redirect-btns {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+        margin-top: 3%;
+        gap: 20px;
+        color: white;
+    }
+
+    #redirect-principal #redirect1,
+    #redirect-principal #redirect2 {
+       width: 100%; 
+       margin-top: 10px;
+       max-width: 100%;      
     }
 
 }
