@@ -504,7 +504,6 @@ main {
 
     #redirect-principal #presentation p {
         display: block;
-        ;
         font-size: 17px;
         line-height: 1.8;
         width: 100%;
@@ -525,9 +524,55 @@ main {
 
     #redirect-principal #redirect1,
     #redirect-principal #redirect2 {
-       width: 100%; 
-       margin-top: 10px;
-       max-width: 100%;      
+        width: 100%;
+        margin-top: 10px;
+        max-width: 100%;
     }
 
+}
+
+@media (max-width:550px) {
+    #presentation h1 {
+        display: inline;
+        color: #f1f1f1;
+        font-size: 25px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    #redirect-principal #presentation p {
+        display: block;
+        font-size: 14px;
+        line-height: 1.8;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #redirect-principal #presentation {
+        display: flex;
+        padding: 15% 12%;
+        gap: 15px;
+    }
+
+    #redirect-btns {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+        margin-top: 1%;
+        gap: 16px;
+        color: white;
+    }
+
+    #redirect-principal #redirect1,
+    #redirect-principal #redirect2 {
+        width: 100%;
+        margin-top: 0px;
+        max-width: 100%;
+        font-size: 16px;
+    }
 }
