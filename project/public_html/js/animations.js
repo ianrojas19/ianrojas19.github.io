@@ -29,6 +29,7 @@ const enableProdList = () => {
         navigation.style.height = '550px';
         typeProdMenu.style.display = 'flex';
         navigation.style.justifyContent = 'flex-start';
+        dropItemDown.style.marginTop= '20px';
         arrow.style.transform = 'rotateX(180deg)';
         arrow.style.stroke = 'red';
         spanProd.classList.add('active-prod-list');
@@ -45,5 +46,15 @@ const enableProdList = () => {
     }
 }
 
-checkbox.addEventListener('click', enableNav);
-dropProd.addEventListener('click', enableProdList);
+
+checkbox.addEventListener('click', function() {
+    if (window.innerWidth <= 1000) {
+      enableNav();
+    }
+  });
+  
+  dropProd.addEventListener('click', function() {
+    if (window.innerWidth <= 1000) {
+      enableProdList();
+    }
+  });
