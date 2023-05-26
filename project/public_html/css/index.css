@@ -377,6 +377,7 @@ main {
         bottom: 4px;
         left: 0px;
     }
+
 }
 
 #redirect-principal {
@@ -402,8 +403,7 @@ main {
     padding: 7% 12%;
     color: #3a3333;
     gap: 20px;
-    border-top: none;
-    
+    box-sizing: border-box;
 }
 
 #presentation h1 {
@@ -421,17 +421,16 @@ main {
     color: #ffffff;
     font-size: 16px;
     line-height: 1.7;
-    min-width: 730px;
-    max-width: 930px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
     text-align: center;
 }
 
 #redirect-btns{
     display: flex;
     flex-direction: row;
-    width: 50%;
-    margin: 0 auto;
+    width: 100%;
+    align-self: center;
     justify-content: center;
     margin-top: 30px;
     gap: 20px;
@@ -445,8 +444,7 @@ main {
     align-items: center;
     text-align: center;
     height: 50px;
-    width: 300px;
-    min-width: 300px;
+    width: 90%;
     font-size: 19px;
     color: white;
     font-family:monospace;
