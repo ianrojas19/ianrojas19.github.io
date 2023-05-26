@@ -27,7 +27,7 @@ const enableNav = () => {
 
 const enableProdList = () => {
     if (spanProd.className == 'inactive-prod-list') {
-        navigation.style.height = '550px';
+        navigation.style.height = '525px';
         typeProdMenu.style.display = 'flex';
         navigation.style.justifyContent = 'flex-start';
         dropItemDown.style.marginTop= '20px';
@@ -39,6 +39,7 @@ const enableProdList = () => {
     else {
         navigation.style.height = '250px';
         typeProdMenu.style.display = 'none';
+        dropItemDown.style.marginTop= '0px';
         navigation.style.justifyContent = 'flex-start';
         arrow.style.transform = 'rotateX(0deg)';
         arrow.style.stroke = '#2764e8e9';

@@ -44,7 +44,7 @@ nav ul {
     display: flex;
     width: 100%;
     gap: 5%;
-    height: 100% !important;
+    height: 100%;
     align-content: center;
     align-items: center;
     justify-content: flex-end;
@@ -199,7 +199,7 @@ main {
     color: #3a3333;
     gap: 20px;
     box-sizing: border-box;
-    
+    justify-content: center;
 }
 
 #presentation h1 {
@@ -207,6 +207,7 @@ main {
     color: #f1f1f1;
     font-size: 55px;
     width: 100%;
+    max-width: 915px;
     margin: 0 auto;
     text-align: center;
 }
