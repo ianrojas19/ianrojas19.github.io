@@ -535,7 +535,7 @@ main {
     #presentation h1 {
         display: inline;
         color: #f1f1f1;
-        font-size: 25px;
+        font-size: 27px;
         width: 100%;
         margin: 0 auto;
         text-align: center;
@@ -544,7 +544,7 @@ main {
 
     #redirect-principal #presentation p {
         display: block;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.8;
         width: 100%;
         text-align: center;
@@ -552,9 +552,8 @@ main {
     }
 
     #redirect-principal #presentation {
-        display: flex;
-        padding: 15% 12%;
-        gap: 15px;
+        display: flex;        
+        gap: 20px;
     }
 
     #redirect-btns {
@@ -563,8 +562,8 @@ main {
         width: 100%;
         align-self: center;
         justify-content: center;
-        margin-top: 1%;
-        gap: 16px;
+        margin-top: 2%;
+        gap: 18px;
         color: white;
     }
 
@@ -574,5 +573,6 @@ main {
         margin-top: 0px;
         max-width: 100%;
         font-size: 17px;
+        
     }
 }
