@@ -1,9 +1,13 @@
 var checkbox = document.getElementById('checkbox');
-var nav = document.getElementById('ul-navigation');
-var body = document.body;
-
-const togglenav = () =>{
-    body.style.backgroundColor = 'black'
+var navigation = document.getElementById('ul-navigation');
+const enable = () => {
+    if (checkbox.checked) {
+        navigation.classList.remove('disable');
+        navigation.classList.add('enable');
+    } else {
+        navigation.classList.add('disable');
+        navigation.classList.remove('enable');
+    }
 }
 
-checkbox.addEventListener ("click", togglenav)
+checkbox.addEventListener('click', enable);

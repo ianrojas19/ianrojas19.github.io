@@ -216,9 +216,18 @@ main {
         height: 230px;
         align-items: flex-start;
         padding: 10px 30px;
-        justify-content: space-evenly;
-        
+        justify-content: space-evenly;        
         transition: 0.3s ;
+    }
+
+    .enable{
+        display: flex !important;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .disable{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0) !important;        
+
     }
 
     #arrow {
@@ -239,10 +248,12 @@ main {
         width: 100%;
         padding: 7px;
         align-items: center;
-        color: #787878e9 !important;
+        color: #2764e8e9 !important;
         background-color: #ffffff;
         font-size: 11px;
     }
+
+    
 
     .bars {
         display: block;
@@ -284,8 +295,8 @@ main {
         margin-left: 4.5px;
     }
 
-    #checkbox:checked+.toggle body {
-        background-color: red;
+    #checkbox:checked+.toggle #ul-navigation {
+        top: 10000px;
     }
 
     #checkbox:checked+.toggle #bar2 {
