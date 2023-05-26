@@ -19,6 +19,7 @@ const enableNav = () => {
         navigation.style.justifyContent = 'flex-start';
         arrow.style.transform = 'rotateX(0deg)';
         arrow.style.stroke = '#2764e8e9';
+        dropItemDown.style.marginTop= '0px';
         spanProd.classList.add('inactive-prod-list');
         spanProd.classList.remove('active-prod-list');
     }
@@ -40,6 +41,7 @@ const enableProdList = () => {
         typeProdMenu.style.display = 'none';
         navigation.style.justifyContent = 'flex-start';
         arrow.style.transform = 'rotateX(0deg)';
+        dropItemDown.style.marginTop= '0px';
         arrow.style.stroke = '#2764e8e9';
         spanProd.classList.add('inactive-prod-list');
         spanProd.classList.remove('active-prod-list');
