@@ -175,6 +175,123 @@ main {
 }
 
 
+#redirect-principal {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 600px;
+    background-color: #ffffff;
+    margin-top: 50px;
+    gap: 50px;
+    align-items: center;
+    
+}
+
+#redirect-principal #presentation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-image: url(/project/public_html/assets/img/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8.5% 12%;
+    color: #3a3333;
+    gap: 20px;
+    box-sizing: border-box;
+    
+}
+
+#presentation h1 {
+    display: inline;
+    color: #f1f1f1;
+    font-size: 55px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#redirect-principal #presentation p {
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.7;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#redirect-btns{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    margin-top: 3%;
+    gap: 20px;
+    color: white;
+}
+
+
+
+#redirect-principal #redirect1, #redirect-principal #redirect2  {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    width: 90%;
+    font-size: 19px;
+    color: white;
+    
+    transition: 0.2s all;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.183);
+    max-width: 300px;
+}
+
+#redirect-principal #redirect1 {
+    background-color: #c12c2cca !important;
+}
+
+#redirect-principal #redirect2 {
+    background-color: rgba(0, 153, 255, 0.776) !important;
+}
+
+#redirect-principal #redirect1:hover {
+    background-color: #c12c2c !important;
+    transform: scale(1.02);
+}
+
+#redirect-principal #redirect2:hover {
+    background-color: rgba(0, 153, 255, 0.909) !important;
+    transform: scale(1.02);
+    
+}
+
+#nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 655px;
+    margin: 0 auto;
+    background-color: #ff0000;
+    margin-top: 50px;
+}
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 655px;
+    margin: 0 auto;
+    background-color: #5b2cc1;
+    margin-top: 50px;
+    filter: blur(1px);
+}
+
+
 
 @media (max-width:1000px) {
     main {
@@ -378,117 +495,13 @@ main {
         left: 0px;
     }
 
-}
+    #presentation h1 {
+        display: inline;
+        color: #f1f1f1;
+        font-size: 40px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-#redirect-principal {
-    display: flex;
-    box-sizing: border-box;
-    width: 100%;
-    height: 10%;
-    
-    background-color: #ffffff;
-    margin-top: 50px;
-    gap: 50px;
-    align-items: center;
-}
-
-#redirect-principal #presentation {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-image: url(/project/public_html/assets/img/image1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 7% 12%;
-    color: #3a3333;
-    gap: 20px;
-    box-sizing: border-box;
-}
-
-#presentation h1 {
-    display: inline;
-    color: #f1f1f1;
-    font-size: 53px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#redirect-principal #presentation p {
-    display: block;
-    width: 100%;
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 1.7;
-    width: 100%;
-    max-width: 1000px;
-    text-align: center;
-}
-
-#redirect-btns{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-self: center;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 20px;
-    color: white;
-}
-
-
-
-#redirect-principal #redirect1, #redirect-principal #redirect2  {
-    display: grid;
-    align-items: center;
-    text-align: center;
-    height: 50px;
-    width: 90%;
-    font-size: 19px;
-    color: white;
-    font-family:monospace;
-    transition: 0.2s all;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.183);
-}
-
-#redirect-principal #redirect1 {
-    background-color: #c12c2cca !important;
-}
-
-#redirect-principal #redirect2 {
-    background-color: rgba(0, 153, 255, 0.776) !important;
-}
-
-#redirect-principal #redirect1:hover {
-    background-color: #c12c2c !important;
-    transform: scale(1.02);
-}
-
-#redirect-principal #redirect2:hover {
-    background-color: rgba(0, 153, 255, 0.909) !important;
-    transform: scale(1.02);
-    
-}
-
-#nosotros {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 655px;
-    margin: 0 auto;
-    background-color: #ff0000;
-    margin-top: 50px;
-}
-
-#productos {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 655px;
-    margin: 0 auto;
-    background-color: #5b2cc1;
-    margin-top: 50px;
-    filter: blur(1px);
 }
