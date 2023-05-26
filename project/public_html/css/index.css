@@ -531,7 +531,7 @@ main {
 
 }
 
-@media (max-width:550px) {
+@media (max-width:600px) {
     #presentation h1 {
         display: inline;
         color: #f1f1f1;
