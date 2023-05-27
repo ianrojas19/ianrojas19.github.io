@@ -18,7 +18,6 @@ const enableNav = () => {
   const enable = checkbox.checked;
   navigation.classList.toggle('disable', !enable);
   navigation.classList.toggle('enable', enable);
-
   if (!enable) {
     navigation.style.height = '270px';
     typeProdMenu.style.display = 'none';
@@ -38,7 +37,7 @@ const enableProdList = () => {
   typeProdMenu.style.display = isActive ? 'flex' : 'none';
   typeProdMenu.style.clipPath = 'polygon(0 0, 100% 0, 100% 100%, 0 100%)';
   navigation.style.justifyContent = 'flex-start';
-  dropItemDown.style.marginTop = isActive ? '5px' : '0px';
+  dropItemDown.style.marginTop = isActive ? '10px' : '0px';
   arrow.style.transform = isActive ? 'rotateX(180deg)' : 'rotateX(0deg)';
   arrow.style.stroke = isActive ? 'red' : '#2764e8e9';
   spanProd.classList.toggle('active-prod-list', isActive);
