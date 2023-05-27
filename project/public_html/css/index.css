@@ -384,8 +384,8 @@ main {
         border-bottom: #3a333315 0px solid;
         background-color: white;
         transition: 0.2s all ease;
-        font-size: 13px;
-        padding: 14px 16px 16px 6px;
+        font-size: 11px;
+        padding: 15px 16px 16px 6px;
     }
 
     .dropdown-menu {
