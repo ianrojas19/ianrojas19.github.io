@@ -14,7 +14,7 @@ const enableNav = () => {
     } else {
         navigation.classList.add('disable');
         navigation.classList.remove('enable');
-        navigation.style.height = '250px';
+        
         typeProdMenu.style.display = 'none';
         navigation.style.justifyContent = 'flex-start';
         arrow.style.transform = 'rotateX(0deg)';
@@ -27,7 +27,7 @@ const enableNav = () => {
 
 const enableProdList = () => {
     if (spanProd.className == 'inactive-prod-list') {
-        navigation.style.height = '535px';
+        navigation.style.height = '530px';
         typeProdMenu.style.display = 'flex';
         typeProdMenu.style.clipPath = 'polygon(0 0, 100% 0, 100% 100%, 0 100%); !important'
         navigation.style.justifyContent = 'flex-start';
