@@ -88,8 +88,7 @@ nav #active {
 
 .dropdown:hover {
     color: #4c6ddae9;
-
-    .arrow-enable {
+    #arrow {
         position: relative;
         top: 3px;
         transform: rotateX(180deg);
