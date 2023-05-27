@@ -20,7 +20,7 @@ const enableNav = () => {
   navigation.classList.toggle('enable', enable);
 
   if (!enable) {
-    navigation.style.height = '260px';
+    navigation.style.height = '270px';
     typeProdMenu.style.display = 'none';
     navigation.style.justifyContent = 'flex-start';
     arrow.style.transform = 'rotateX(0deg)';
