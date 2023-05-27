@@ -334,7 +334,7 @@ main {
         align-items: flex-start;
         padding: 15px 30px;
         justify-content: space-evenly;
-        transition: 0.3s;
+        transition: 0.2s;
     }
 
     .enable {
