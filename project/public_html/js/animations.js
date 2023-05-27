@@ -14,7 +14,7 @@ const enableNav = () => {
     } else {
         navigation.classList.add('disable');
         navigation.classList.remove('enable');
-        
+        navigation.style.height = '260px';
         typeProdMenu.style.display = 'none';
         navigation.style.justifyContent = 'flex-start';
         arrow.style.transform = 'rotateX(0deg)';
