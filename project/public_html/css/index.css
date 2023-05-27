@@ -385,7 +385,7 @@ main {
         background-color: white;
         transition: 0.2s all ease;
         font-size: 13px;
-        padding: 16px 16px 16px 6px;
+        padding: 14px 16px 16px 6px;
     }
 
     .dropdown-menu {
