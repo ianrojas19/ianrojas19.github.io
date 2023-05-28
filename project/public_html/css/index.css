@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&family=Varela+Round&display=swap');
 
-/* ESTILOS DEL MAIN DEL HEADER DE LA PAGINA*/
+/* ESTILOS DEL MAIN DEL HEADER DE LA PAGINA */
 header {
-    display: flex;
-    flex-direction: row;
-    padding: 10px 5%;
-    height: 150px;
-    border-bottom: 2px #dadada solid;
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 11;
-    width: 100%;
-    align-content: center;
-    justify-content: space-around;
-    background-color: #FFFFFF;
-    box-shadow: 0 -4px 10px 0 #3a3333;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 5%;
+  height: 150px;
+  border-bottom: 2px #dadada solid;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  box-shadow: 0 -4px 10px 0 #3a3333;
 }
 
 header img {
