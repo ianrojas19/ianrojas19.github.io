@@ -8,5 +8,10 @@ body{
 }
 
 #home{
+    display: flex;
+    height: 100px;
     width: 300px;
+    justify-content: center;
+    align-items: center;
+    
 }
