@@ -1,0 +1,259 @@
+.cta {
+    justify-content: center;
+}
+
+.cta img {
+    width: 100%;
+    border-radius: 10px
+}
+
+.ctat {
+    font-family: 'poppins';
+    padding-right: 15px;
+    color:#3a2a1f;
+} 
+
+.ctat h1 {
+    font-weight: 600;
+    color: rgb(110, 81, 60);
+    line-height: 1.2em;
+}
+
+.ctat p {
+    font-size: 13px;
+    color: rgba(0, 0, 0, .651);
+    line-height: 2em;
+}
+
+.ctat a {
+    width: 40%;
+    min-width: 170px;
+    padding: 16px 20px;
+    text-align: center;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 40px;
+    font-family: 'poppins';
+    background-image: url(/assets/img/bg/Simple\ Shiny.svg);
+    background-size: cover;
+    border: 2px solid #57402f;
+    transition: .4s all
+}
+
+.cta a:hover {
+    color: #57402f !important;
+    background-image: none !important
+}
+
+.brands {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-position: center;
+    width: 100%;
+    background-color: #57402f;
+    background-image: url(/assets/img/bg/Simple\ Shiny2.svg);
+    background-size: cover;
+    overflow: hidden;
+    height: 150px;
+    margin: auto;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border: 5px solid #3a2a1f;
+    border-left: 0;
+    border-right: 0;
+}
+
+.slide img {
+    max-height: 100px
+}
+
+.slide-track {
+    display: flex;
+    animation: scroll 45s linear infinite;
+    -webkit-animation: scroll 45s linear infinite;
+    width: fit-content;
+    align-items: center;
+    gap: 120px;
+}
+
+.slider .slide {
+    width: 200px
+}
+
+.slider .slide img {
+    width: 100%
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    100% {
+        -webkit-transform: translateX(-200%);
+        transform: translateX(-200%)
+    }
+}
+
+.p-block {
+    height: 500px;
+    background-color: #57402f;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    border: #57402f 3px solid;
+    cursor: pointer
+}
+
+.completes {
+    background-image: url(/assets/img/images/nyjah.png)
+}
+
+.wheels {
+    background-image: url(/assets/img/products/wheels.png)
+}
+
+.trucks {
+    background-image: url(/assets/img/products/trucks2.jpg)
+}
+
+.decks {
+    background-image: url(/assets/img/products/decks4.jpg)
+}
+
+.tape {
+    background-image: url(/assets/img/products/grip.jpg)
+}
+
+.bearings {
+    background-image: url(/assets/img/products/bearings5.jpg)
+}
+
+.hard {
+    background-image: url(/assets/img/products/hardware.jpg)
+}
+
+.p-block a {
+    color: #57402f;
+    font-family: 'poppins';
+    font-weight: 900;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    top: 87%;
+    left: 3%;
+    border: 3px #57402f solid;
+    transition: .5s all ease
+}
+
+.p-block:hover a {
+    border-radius: 15px
+}
+
+h2 {
+    color: white;
+    background-color: #57402f;
+    padding: 18px 25px 18px 15px;
+    display: flex;
+    text-align: start;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    justify-content: center;
+    font-family: 'poppins';
+    font-weight: 600;
+    align-self: flex-start !important;
+    font-size: calc(0.8rem + .9vw) !important;
+    border: 4px solid #3a2a1f
+}
+
+.follow {
+    font-family: 'poppins';
+    font-weight: 600;
+    color: #674c38;
+    line-height: 1.7em;
+    font-size: calc(1rem + .9vw);
+}
+
+.follow a {
+    font-family: 'title';
+    text-decoration: none;
+    font-weight: 700;
+    color: #e57b24;
+    font-size: calc(1.1rem + .9vw);
+}
+
+.f-cartel {
+    border-right: 3px solid #57402f
+}
+
+.social {
+    gap: 30px
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .4s all;
+    border-radius: 10px;
+    gap: 10px
+}
+
+.social a:hover {
+    border-radius: 25px;
+    transition: .4s all
+}
+
+.social a img {
+    height: 40px
+}
+
+.fb {
+    color: #1877f2;
+    border: 3px solid #1877f2
+}
+
+.ig {
+    color: #FF591C;
+    border: 3px solid #FF591C
+}
+
+.tw {
+    color: #000000;
+    border: 3px solid #000000
+}
+
+.tk {
+    color: #ff0000;
+    border: 3px solid #ff0000
+}
+
+@media screen and (max-width:768px) {
+    .f-cartel {
+        border-radius: 0;
+        border-right: 0 solid #57402f
+    }
+}
+
+@media screen and (max-width:560px) {
+    .slide-track {
+        display: flex;
+        -webkit-animation: scroll 14s linear infinite !important;
+        animation: scroll 14s linear infinite !important;
+        width: fit-content;
+        align-items: center;
+        gap: 80px;
+    }
+}

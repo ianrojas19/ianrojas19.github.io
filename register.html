@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/logo/Cara Blanca 2.png" type="image/x-icon">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/accounts.css">
+    <title>Create Account | Jackz Skateshop</title>
+
+
+</head>
+
+<body>
+
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    
+    <div class="load-container">
+        
+        <div class="c-main2 container p-md-4 p-3">
+            <div class="logo-cont col-12 d-flex justify-content-center">
+                <a id="backtomain" href="/"><img
+                        src="/assets/img/logo/logo-jackz.png"></a>
+            </div>
+            <div class="col-12">
+                <form id="form" action="" class="d-flex flex-column py-4 px-4">
+                    <h2 class="mb-2">Create an account</h2>
+                    <p class="warn mb-3">
+                        Fill all the boxes with the required information to create your account.
+                    </p>
+                    <div class="mb-3">
+                        <label for="email" class="form-label acc-lbl">Email address</label>
+                        <input required type="email" class="form-control" id="email" placeholder="">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label acc-lbl">Name</label>
+                        <input required type="text" class="form-control" id="name" placeholder="">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="username" class="form-label acc-lbl">Username</label>
+                        <input required type="text" class="form-control" id="username" placeholder="">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fecha" class="form-label">Birthday:</label>
+                        <input required type="date" class="form-control" id="fecha">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="passwd" class="form-label acc-lbl">Password</label>
+                        <div class="input-group">
+                            <input required type="password" class="form-control" id="passwd" placeholder=""
+                                aria-label="Contraseña" aria-describedby="show-hide-btn">
+                            <button class="btn" type="button" id="show-hide-btn"><img src="/assets/img/icons/eye.svg"
+                                    alt=""></button>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="cfpasswd" class="form-label acc-lbl">Confirm Password</label>
+                        <div class="input-group">
+                            <input required type="password" class="form-control" id="cfpasswd" placeholder=""
+                                aria-label="Contraseña" aria-describedby="show-hide-btn">
+                            <button class="btn" type="button" id="show-hide-btn-cf"><img src="/assets/img/icons/eye.svg"
+                                    alt=""></button>
+                        </div>
+                    </div>
+
+
+
+                    <button id="register" class="btn" type="submit">Create Account</button>
+
+                    <div class="advise-rd mt-3">
+                        <span>Already registered?</span>
+                        <a href="/log-in.html">Log-In</a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/js/loadContent.js"></script>
+    <script src="/js/register.js"></script>
+    <source src="node_modules/bootstrap/dist/js/bootstrap.min.js">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

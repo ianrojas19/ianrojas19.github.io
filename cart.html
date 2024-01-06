@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/img/logo/Cara Blanca 2.png" type="image/x-icon">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/cart.css">
     <link rel="stylesheet" href="/css/general.css">
-    <title>Home | Jackz Skateshop</title>
+    <title>Cart | Jackz Skateshop</title>
 
 
 </head>
@@ -129,192 +129,75 @@
             <a href="/store.html">Hardware & Tools</a>
         </div>
 
-        <!-- CALL TO ACTION -->
+        <div class="container-fluid d-flex flex-md-row flex-column">
 
-        <div id="main" class="container-fluid ">
+            <div id="cart-container"
+                class="col-md-8 col-12 p-2 d-flex flex-column align-items-md-start align-items-center">
 
-            <div
-                class="cta row d-flex p-xl-5 p-lg-5 p-md-5 p-sm-5 p-4 pt-5 pb-5 pt-xl-4 pt-lg-5 pt-md-5 pb-xl-5 pb-lg-5 pb-md-5">
-                <div
-                    class="ctat col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center gap-xl-1 gap-lg-0 gap-md-0 gap-0">
-                    <h1>Your Trusted Online Skateshop</h1>
-                    <p>Explore our online skate shop and our wide range of items in our sales catalog and get the best
-                        and
-                        most durable skate products on the market!</p>
-                    <a href="/store.html">Go Shopping</a>
+                <div id="empty-msg-container" class="prod-container row w-100 py-4 my-3 mb-2">
+                    <div class="empty-msg d-flex py-4 justify-content-center align-items-center gap-2 flex-column">
+                        <p class="mb-0">Your cart is empty :(</p>
+                        <a href="/store.html" class="btn keep-shopping">Go back to store</a>
+                    </div>
                 </div>
-                <div
-                    class="imgc p-3 col-xl-6 col-lg-6 col-md-6 d-xl-flex d-lg-flex d-md-flex d-sm-none d-none  justify-content-center align-items-center">
-                    <img src="/assets//img/images/DSC_6424-smaller.png" alt="">
-                </div>
+
             </div>
 
-        </div>
+            <div id="checkout" class="col-md-4 col-12 my-4 px-lg-2 px-md-0 px-2 d-flex flex-column">
 
-        <!-- BRANDS -->
+                <div class="order-summary col-12 d-flex flex-column gap-2 pb-3">
 
-        <div class="brands row">
-            <div class="slide-track">
-                <div class="slide">
-                    <img src="/assets/img/brands/flip.png" alt="">
+                    <p class="order-title p-3 mb-2">Order Summary</p>
+
+                    <div class="order-item-gp px-3 d-flex justify-content-between">
+                        <p class="order-item">Subtotal:</p>
+                        <p id="cart-subtotal" class="order-item">$</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="order-item-gp px-3 d-flex justify-content-between">
+                        <p class="order-item">Estimated Shipping:</p>
+                        <p id="cart-shipping" class="order-item">$</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="order-item-gp px-3 d-flex justify-content-between">
+                        <p class="order-item">I.V.A (13%):</p>
+                        <p id="cart-iva" class="order-item">$</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="order-item-gp px-3 d-flex justify-content-between">
+                        <p class="order-item">Total:</p>
+                        <p id="cart-total" class="order-item">$</p>
+                    </div>
+
                 </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/spit.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/santa.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/element.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/inde.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/backer.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/deathw.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/tm.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/pw.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/dgk.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/dc.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/flip.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/spit.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/santa.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/element.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/inde.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/backer.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/deathw.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/tm.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/pw.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/dgk.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/dc.png" alt="">
-                </div>
+
+                <button id="confirm-purchase" class="btn button-purch btn-success mt-3">Confirm Purchase</button>
+
+
+                <hr class="mt-3 or-divi">
+                </hr>
+                <p class="text-center or">or</p>
+
+
+                <a href="/store.html" id="keep-shopping" class="btn btn-warning button-purch">Keep Shopping</a>
             </div>
         </div>
 
-        <div class="container-fluid mb-5 d-flex flex-column p-3">
-            <div id="p-sec" class="row d-flex flex-row justify-content-center">
 
-                <div class="col-12 d-flex justify-content-start">
-                    <h2>CHECK OUR PRODUCTS</h2>
-                </div>
-
-                <div class=" p-cat col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 mt-3">
-                    <div class="p-block p-entire completes">
-                        <a href="/store.html">Complete Skateboards</a>
-                    </div>
-                </div>
-
-                <div class="p-cat col-xl-5 col-lg-5 col-md-5 col-sm-6 col-12 mt-3">
-                    <div class="p-block p-entire trucks">
-                        <a href="/store.html">Trucks</a>
-                    </div>
-                </div>
-
-
-                <div class=" p-cat col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mt-3">
-                    <div class="p-block wheels">
-                        <a href="/store.html">Wheels</a>
-                    </div>
-                </div>
-
-                <div class="p-cat col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mt-3">
-                    <div class="p-block decks">
-                        <a href="/store.html">Decks</a>
-                    </div>
-                </div>
-
-
-
-                <div class="p-cat col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mt-3">
-                    <div class="p-block tape">
-                        <a href="/store.html">Griptapes</a>
-                    </div>
-                </div>
-
-                <div class="p-cat col-xl-5 col-lg-5 col-md-5 col-sm-6 col-12 mt-3">
-                    <div class="p-block p-entire bearings">
-                        <a href="/store.html">Bearings</a>
-                    </div>
-                </div>
-
-                <div class="p-cat col-xl-7 col-lg-7 col-md-7 col-sm-6 col-12 mt-3">
-                    <div class="p-block p-entire hard">
-                        <a href="/store.html">Hardware & Tools</a>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-
-        <div class="container-fluid mb-5 d-flex flex-column p-3">
-            <div id="follow-sec" class="row d-flex flex-row justify-content-center">
-
-                <div class="col-12 d-flex justify-content-start">
-                    <h2>FOLLOW US</h2>
-                </div>
-
-                <div
-                    class="f-cartel col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center pb-xl-5 pb-lg-5 pb-md-5 pb-sm-0 pb-0 pt-xl-5 pt-lg-5 pt-md-5 pt-sm-3 pt-3 p-xl-5 p-lg-5 p-md-5 p-sm-4 p-4">
-                    <img class="mb-3" src="/assets/img/logo/cartel.png" alt="">
-                    <p class="follow text-center">Follow <a href="/">JACKZ</a> on our social media and get noticed about
-                        discounts, new
-                        arrivals, tournaments and more!</p>
-                </div>
-
-                <div
-                    class="social col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-around pt-xl-5 pt-lg-5 pt-md-5 pt-sm-4 pt-4 p-xl-5 p-lg-5 p-md-5 p-sm-4 p-4">
-                    <a class="fb" href="https://www.facebook.com"><img src="/assets/img/icons/brand-facebook.svg">Jackz
-                        Skateshop</a>
-                    <a class="ig" href="https://www.instagram.com"><img
-                            src="/assets/img/icons/brand-instagram.svg">@jackz_sk8shop</a>
-                    <a class="tw" href="https://twitter.com/"><img src="/assets/img/icons/brand-x.svg">
-                        @jackz_sk8shop</a>
-                    <a class="tk" href="https://www.tiktok.com"><img
-                            src="/assets/img/icons/brand-tiktok.svg">@jackz_sk8shop</a>
-                </div>
-            </div>
-        </div>
 
         <div id="cart" class="d-flex justify-content-center align-items-center">
             <img src="/assets/img/icons/shopping-bag.svg" alt="">
-            <span id="cart-size">0</span>
+            <span>0</span>
         </div>
 
-        <div class="container-fluid footer">
+
+        <div class="container-fluid footer mt-5">
             <footer class="row pb-0 pt-3 mt-3 gap-4">
                 <div
                     class="fot-img col-lg-5 col-xl-5 col-md-12 col-sm-12 col-12 mb-3 d-flex flex-column justify-content-center align-items-md-center align-items-center">
@@ -383,20 +266,12 @@
     </div>
 
 
-    <script src="/node_modules/jquery/dist/jquery.js"></script>
     <script src="/js/loadContent.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/js//cart.js"></script>
     <script src="/js/general.js"></script>
     <source src="node_modules/bootstrap/dist/js/bootstrap.min.js">
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const shopCat = document.getElementsByClassName('p-block ');
-
-        for (let i = 0; i < shopCat.length; i++) {
-            shopCat[i].addEventListener('click', function () {
-                location.assign('/store.html');
-            });
-        }
-    </script>
 </body>
 
 </html>
