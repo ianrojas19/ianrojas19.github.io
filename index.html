@@ -4,399 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/img/logo/Cara Blanca 2.png" type="image/x-icon">
-    <link rel="stylesheet" href=".../bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/general.css">
-    <title>Home | Jackz Skateshop</title>
-
-
+    <title>Proyecto Encriptador - Challenge Alura0NE</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
 
-    <div class="loader-wrapper">
-        <div class="loader"></div>
-    </div>
+    <header>
+        <img src="/assets/img/logo/Logo.svg" alt="LOGO ALURA LATAM">
+    </header>
 
-    <div class="load-container">
+    <main>
+        <section id="message">
 
-        <header class="d-flex align-items-center col-12">
+            <textarea name="text-to-encrypt" id="text-to-encrypt" placeholder="Ingresa el texto aquí" cols="30"
+                rows="10"></textarea>
 
-            <div class="redirect-first col-xl-4 col-lg-4 col-md-5 col-sm-5 col-7 d-flex  align-items-center"
-                style="gap: 5px;">
-                <a href="/"><img src="/assets/img/logo/logo-jackz.png" alt="Return to home page."></a>
+            <div id="warn-message">
+                <img src="/assets/img/icons/info-circle-filled.svg">
+                <span>Ingresa solo letras minúsculas y sin tílde.</span>
             </div>
 
-            <nav id="nav-dsk" class="col-5">
-                <ul class="m-0">
-                    <li class="ul-li nvactive"><a class="ul-item " href="/">Home</a></li>
-                    <li id="store-btn" class="ul-li "><a class="ul-item">Store</a><img
-                            src="/assets/img/icons/caret-down-fill.svg" alt="Check our products"></li>
-                    <li class="ul-li"><a class="ul-item" href="/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
-            <div id="account"
-                class="account offset-xl-1 offset-lg-1 offset-md-5 offset-2 offset-sm-5 col-1 d-flex justify-content-end">
-
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <img src="/assets/img/icons/person-circle.svg" alt="">
-                        <span id="acc-label">Account</span>
-                    </button>
-
-                    <ul class="dropdown-menu dropdown-menu-end pt-3 pb-3">
-
-                        <li><a href="/log-in.html" id="opt-login" class="dropdown-item nvl log" type="button">Log-in</a>
-                        </li>
-
-                        <hr class="sct-dvl log">
-
-                        <li><a href="/register.html" id="opt-reg" class="dropdown-item nvl reg"
-                                type="button">Register</a>
-                        </li>
-
-                        <hr class="sct-dvl reg">
-
-                        <!-- <li><a href="/register.html" id="opt-purch" class="dropdown-item nvl" type="button">My
-                                Purchases</a>
-                        </li> 
-                        
-                        <hr class="sct-dvl"> -->
-
-                        <li><span id="opt-out" class="dropdown-item nvl" type="button">Sign out</span>
-                        </li>
-
-                    </ul>
-                </div>
+            <div id="encrypt-or-decrypt-btns">
+                <button id="msg-encrypt">Encriptar</button>
+                <button id="msg-decrypt">Desencriptar</button>
             </div>
+        </section>
 
-            <nav id="nav-mobile" class="col-1 navbar align-self-center">
-                <button id="nav-drop" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <img src="/assets/img/icons/menu-2.svg" alt="">
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title name" id="offcanvasNavbarLabel">Jackz</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Store
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/store.html">Complete Skateboards</a></li>
-                                    <hr class="sct-dv">
-                                    <li><a class="dropdown-item" href="/store.html">Decks</a></li>
-                                    <hr class="sct-dv">
-                                    <li><a class="dropdown-item" href="/store.html">Trucks</a></li>
-                                    <hr class="sct-dv">
-                                    <li><a class="dropdown-item" href="/store.html">Griptape</a></li>
-                                    <hr class="sct-dv">
-                                    <li><a class="dropdown-item" href="/store.html">Wheels</a></li>
-                                    <hr class="sct-dv">
-                                    <li><a class="dropdown-item" href="/store.html">Bearings</a></li>
-                                    <hr class="sct-dv">
-                                    <li><a class="dropdown-item" href="/store.html">Hardware & Tools</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <section id="msg-result">
+            <textarea name="encrypt-result" id="encrypt-result" class="encrypt-success" cols="30" rows="10" readonly></textarea>
 
-        <div id="store-menu" class="col-12 nvfloat-ds d-flex justify-content-between align-items-center">
-            <a href="/store.html">Complete Skateboards</a> -
-            <a href="/store.html">Decks</a> -
-            <a href="/store.html">Griptapes</a> -
-            <a href="/store.html">Trucks</a> -
-            <a href="/store.html">Wheels</a> -
-            <a href="/store.html">Bearings</a> -
-            <a href="/store.html">Hardware & Tools</a>
-        </div>
+            <button id="copy-to-clipboard" class="encrypt-success">Copiar</button>
 
-        <!-- CALL TO ACTION -->
-
-        <div id="main" class="container-fluid ">
-
-            <div
-                class="cta row d-flex p-xl-5 p-lg-5 p-md-5 p-sm-5 p-4 pt-5 pb-5 pt-xl-4 pt-lg-5 pt-md-5 pb-xl-5 pb-lg-5 pb-md-5">
-                <div
-                    class="ctat col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center gap-xl-1 gap-lg-0 gap-md-0 gap-0">
-                    <h1>Your Trusted Online Skateshop</h1>
-                    <p>Explore our online skate shop and our wide range of items in our sales catalog and get the best
-                        and
-                        most durable skate products on the market!</p>
-                    <a href="/store.html">Go Shopping</a>
-                </div>
-                <div
-                    class="imgc p-3 col-xl-6 col-lg-6 col-md-6 d-xl-flex d-lg-flex d-md-flex d-sm-none d-none  justify-content-center align-items-center">
-                    <img src="/assets//img/images/DSC_6424-smaller.png" alt="">
-                </div>
+            <div id="error-msg">
+                <img src="/assets/img/error/Muñeco.svg" class="encrypt-fail" alt="Message not found">
+                <p id="error-text" class="encrypt-fail">Ningún mensaje fue encontrado</p>
+                <span id="error-recomendation" class="encrypt-fail">Ingresa el texto que desees encriptar o desencriptar
+                    en la <b id="goto-enc-box">"caja de encripción"</b>.</span>
             </div>
-
-        </div>
-
-        <!-- BRANDS -->
-
-        <div class="brands row">
-            <div class="slide-track">
-                <div class="slide">
-                    <img src="/assets/img/brands/flip.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/spit.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/santa.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/element.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/inde.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/backer.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/deathw.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/tm.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/pw.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/dgk.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/dc.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/flip.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/spit.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/santa.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/element.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/inde.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/backer.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/deathw.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/tm.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/pw.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/dgk.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/brands/dc.png" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid mb-5 d-flex flex-column p-3">
-            <div id="p-sec" class="row d-flex flex-row justify-content-center">
-
-                <div class="col-12 d-flex justify-content-start">
-                    <h2>CHECK OUR PRODUCTS</h2>
-                </div>
-
-                <div class=" p-cat col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 mt-3">
-                    <div class="p-block p-entire completes">
-                        <a href="/store.html">Complete Skateboards</a>
-                    </div>
-                </div>
-
-                <div class="p-cat col-xl-5 col-lg-5 col-md-5 col-sm-6 col-12 mt-3">
-                    <div class="p-block p-entire trucks">
-                        <a href="/store.html">Trucks</a>
-                    </div>
-                </div>
-
-
-                <div class=" p-cat col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mt-3">
-                    <div class="p-block wheels">
-                        <a href="/store.html">Wheels</a>
-                    </div>
-                </div>
-
-                <div class="p-cat col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mt-3">
-                    <div class="p-block decks">
-                        <a href="/store.html">Decks</a>
-                    </div>
-                </div>
+        </section>
+    </main>
 
 
 
-                <div class="p-cat col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mt-3">
-                    <div class="p-block tape">
-                        <a href="/store.html">Griptapes</a>
-                    </div>
-                </div>
-
-                <div class="p-cat col-xl-5 col-lg-5 col-md-5 col-sm-6 col-12 mt-3">
-                    <div class="p-block p-entire bearings">
-                        <a href="/store.html">Bearings</a>
-                    </div>
-                </div>
-
-                <div class="p-cat col-xl-7 col-lg-7 col-md-7 col-sm-6 col-12 mt-3">
-                    <div class="p-block p-entire hard">
-                        <a href="/store.html">Hardware & Tools</a>
-                    </div>
-                </div>
 
 
-            </div>
-        </div>
-
-        <div class="container-fluid mb-5 d-flex flex-column p-3">
-            <div id="follow-sec" class="row d-flex flex-row justify-content-center">
-
-                <div class="col-12 d-flex justify-content-start">
-                    <h2>FOLLOW US</h2>
-                </div>
-
-                <div
-                    class="f-cartel col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center pb-xl-5 pb-lg-5 pb-md-5 pb-sm-0 pb-0 pt-xl-5 pt-lg-5 pt-md-5 pt-sm-3 pt-3 p-xl-5 p-lg-5 p-md-5 p-sm-4 p-4">
-                    <img class="mb-3" src="/assets/img/logo/cartel.png" alt="">
-                    <p class="follow text-center">Follow <a href="/">JACKZ</a> on our social media and get noticed about
-                        discounts, new
-                        arrivals, tournaments and more!</p>
-                </div>
-
-                <div
-                    class="social col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-around pt-xl-5 pt-lg-5 pt-md-5 pt-sm-4 pt-4 p-xl-5 p-lg-5 p-md-5 p-sm-4 p-4">
-                    <a class="fb" href="https://www.facebook.com"><img src="/assets/img/icons/brand-facebook.svg">Jackz
-                        Skateshop</a>
-                    <a class="ig" href="https://www.instagram.com"><img
-                            src="/assets/img/icons/brand-instagram.svg">@jackz_sk8shop</a>
-                    <a class="tw" href="https://twitter.com/"><img src="/assets/img/icons/brand-x.svg">
-                        @jackz_sk8shop</a>
-                    <a class="tk" href="https://www.tiktok.com"><img
-                            src="/assets/img/icons/brand-tiktok.svg">@jackz_sk8shop</a>
-                </div>
-            </div>
-        </div>
-
-        <div id="cart" class="d-flex justify-content-center align-items-center">
-            <img src="/assets/img/icons/shopping-bag.svg" alt="">
-            <span id="cart-size">0</span>
-        </div>
-
-        <div class="container-fluid footer">
-            <footer class="row pb-0 pt-3 mt-3 gap-4">
-                <div
-                    class="fot-img col-lg-5 col-xl-5 col-md-12 col-sm-12 col-12 mb-3 d-flex flex-column justify-content-center align-items-md-center align-items-center">
-                    <a href="/"><img src="/assets/img/logo/logo-jackz.png" alt="Return to home page"></a>
-                    <span class="ft-phrase">"Enjoying - the - ride"</span>
-                </div>
-
-                <div class="fot-sec col-xl-3 col-lg-3 col-md-5 col-sm-6 col-12 mb-3">
-                    <h5>Store</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="/store.html"
-                                class="nav-link p-0 text-body-secondary">Complete
-                                Skateboards</a></li>
-                        <li class="nav-item mb-2"><a href="/store.html"
-                                class="nav-link p-0 text-body-secondary">Decks</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="/store.html"
-                                class="nav-link p-0 text-body-secondary">Trucks</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="/store.html"
-                                class="nav-link p-0 text-body-secondary">Wheels</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="/store.html"
-                                class="nav-link p-0 text-body-secondary">Griptapes</a></li>
-                        <li class="nav-item mb-2"><a href="/store.html"
-                                class="nav-link p-0 text-body-secondary">Bearings</a></li>
-                        <li class="nav-item mb-2"><a href="/store.html"
-                                class="nav-link p-0 text-body-secondary">Hardware &
-                                Tools</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="fot-sec col-xl-2 col-lg-2 col-md-5 col-md-2 col-sm-5 col-12 mb-3">
-                    <h5>Links</h5>
-                    <ul class=" nav flex-column">
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Home</a></li>
-                        <li class="nav-item mb-2"><a href="/store.html"
-                                class="nav-link p-0 text-body-secondary">Store</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="/contact.html"
-                                class="nav-link p-0 text-body-secondary">Contact
-                                Us</a></li>
-                        <li class="nav-item mb-2"><a href="/log-in.html" class="nav-link p-0 text-body-secondary">My
-                                Account</a></li>
-                        <li class="nav-item mb-2"><a href="/purchases.html"
-                                class="nav-link p-0 text-body-secondary">Check
-                                Purchases</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="fot-sec col-xl-1 col-lg-1 col-md-12 col-sm-12 col-12 mb-3 align-self-center">
-                    <ul class="socialnv nav flex-lg-column flex-row gap-3">
-                        <a href="https://www.facebook.com/"><img src="/assets/img/icons/brand-facebook-white.svg"></a>
-                        <a href="https://www.instagram.com/"><img src="/assets/img/icons/brand-instagram-white.svg"></a>
-                        <a href="https://www.twitter.com/"><img src="/assets/img/icons/brand-x-white.svg"></a>
-                        <a href="https://www.tiktok.com/"><img src="/assets/img/icons/brand-tiktok-white.svg"></a>
-                    </ul>
-                </div>
-
-                <p class="copyright mb-0">&copy; 2023 Jackz Skateshop. All rights reserved.</p>
-            </footer>
-        </div>
-
-    </div>
-
-
-    <script src="/node_modules/jquery/dist/jquery.js"></script>
-    <script src="/js/loadContent.js"></script>
-    <script src="/js/general.js"></script>
-    <source src="node_modules/bootstrap/dist/js/bootstrap.min.js">
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const shopCat = document.getElementsByClassName('p-block ');
-
-        for (let i = 0; i < shopCat.length; i++) {
-            shopCat[i].addEventListener('click', function () {
-                location.assign('/store.html');
-            });
-        }
-    </script>
+    <script src="/app.js"></script>
 </body>
 
 </html>
