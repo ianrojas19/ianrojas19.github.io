@@ -33,11 +33,11 @@ function encrypt() {
     if (texto.match(/^[a-z ]*$/)) {
 
         texto = texto
-            .replace('e', "enter")
-            .replace('i', "imes")
-            .replace('a', "ai")
-            .replace('o', "ober")
-            .replace('u', "ufat");
+            .replace(/e/gi, "enter")
+            .replace(/i/gi, "imes")
+            .replace(/a/gi, "ai")
+            .replace(/o/gi, "ober")
+            .replace(/u/gi, "ufat");
         result.value = texto;
 
         error = false;
@@ -57,11 +57,11 @@ function decrypt() {
     if (texto.match(/^[a-z ]*$/)) {
 
         texto = texto
-            .replace('ai', "a")
-            .replace('enter', "e")
-            .replace('imes', "i")
-            .replace('ober', "o")
-            .replace('ufat', "u");
+            .replace(/ai/gi, "a")
+            .replace(/enter/gi, "e")
+            .replace(/imes/gi, "i")
+            .replace(/ober/gi, "o")
+            .replace(/ufat/gi, "u");
         result.value = texto;
 
         error = false;
