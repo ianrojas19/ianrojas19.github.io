@@ -74,11 +74,11 @@ function decrypt() {
 }
 
 buttonCopyText.addEventListener('click', function () {
-    let text = result.value;
-    text.select();
+    result.select();
     document.execCommand("copy");
     alert('Copiado en el portapapeles');
 });
+
 
 document.getElementById('goto-enc-box').addEventListener('click', function () {
     message.focus();
