@@ -74,7 +74,9 @@ function decrypt() {
 }
 
 buttonCopyText.addEventListener('click', function () {
-    navigator.clipboard.writeText(result.value);
+    let text = result.value;
+    text.select();
+    document.execCommand("copy");
     alert('Copiado en el portapapeles');
 });
 
