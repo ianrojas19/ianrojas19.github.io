@@ -4,13 +4,27 @@
 
 :root {
     --font-logo: 'VT323', monospace;
-    --font-body: 'Inter', sans-serif;
+    --font-main: 'Inter', sans-serif;
     --color-primary: #202124;
     --color-secondary: #B20A00;
 }
 
-body{
-    max-width: 1400px;
+html{
+    font-family: var(--font-main);
     background: #202124;
 }
 
+body {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    height: 75px;
+    background-color: black;
+}
