@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 @import url(../css/reset.css);
 @import url(../css/mb-design.css);
 
 :root {
     --font-logo: 'VT323', monospace;
+    --font-logo2: 'DotGothic16', sans-serif;;
     --font-main: 'Inter', sans-serif;
     --color-primary: #202124;
     --color-secondary: #B20A00;
@@ -11,18 +13,14 @@
 
 html {
     font-family: var(--font-main);
-    
+
 }
 
 body {
     width: 100%;
     margin: 0 auto;
     max-width: 1500px;
-    background-color: rgb(18, 19, 19);
-    background-image: radial-gradient(ellipse 80% 80% at 50% -20%, #5a5a5f4d, #fff0);
-    background-clip: fixed;
-    background-repeat: no-repeat;
-    backdrop-filter: blur(1px);
+    /* background-color: #121313; */
 }
 
 header {
@@ -31,6 +29,39 @@ header {
     justify-content: space-between;
     padding: 10px 5%;
     height: 75px;
-    background-color: rgba(0, 0, 0, 0.205);
+    background-color: #00000010;
+    position: sticky;
+    top: 0;
+}
+
+header #home {
+    font-size: 44px;
+    font-weight: 600;
+    font-family: var(--font-logo);
+    width: 35%;
+}
+
+header #home span {
+    background: #FF0000;
+    background: -webkit-linear-gradient(to bottom left, #FF0000 25%, #800505 100%);
+    background: -moz-linear-gradient(to bottom left, #FF0000 25%, #800505 100%);
+    background: linear-gradient(to bottom left, #FF0000 25%, #800505 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-logo);
+    font-size: 42px;
+}
+
+header #navigation-dsk{
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font-logo);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+header #navigation-dsk li{
 
 }
