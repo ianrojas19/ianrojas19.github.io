@@ -1,9 +1,9 @@
 body {
   
     background: #0d0d0d;
-    --gap: 5em;
+    --gap: 8em;
     --line: 1px;
-    --color: rgba(255, 255, 255, 0.03);
+    --color: #9a9a9a19;
   
     background-image: linear-gradient(
         -90deg,

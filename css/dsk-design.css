@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url(../css/reset.css);
 @import url(../css/mb-design.css);
 
 :root {
     --font-logo: 'VT323', monospace;
-    --font-logo2: 'DotGothic16', sans-serif;;
-    --font-main: 'Inter', sans-serif;
+    --font-logo2: 'DotGothic16', sans-serif;
+    --font-main: 'Open Sans', sans-serif;
     --color-primary: #202124;
-    --color-secondary: #B20A00;
+    --color-secondary: #c8231b;
 }
 
 html {
@@ -20,7 +21,6 @@ body {
     width: 100%;
     margin: 0 auto;
     max-width: 1500px;
-    /* background-color: #121313; */
 }
 
 header {
@@ -38,7 +38,7 @@ header #home {
     font-size: 44px;
     font-weight: 600;
     font-family: var(--font-logo);
-    width: 35%;
+    width: 25%;
 }
 
 header #home span {
@@ -52,16 +52,55 @@ header #home span {
     font-size: 42px;
 }
 
-header #navigation-dsk{
+header #navigation-dsk {
     display: flex;
-    width: 65%;
-    justify-content: space-around;
+    width: 75%;
+    justify-content: flex-end;
     align-items: center;
-    font-family: var(--font-logo);
-    font-size: 30px;
-    font-weight: 600;
+    gap: 40px;
 }
 
-header #navigation-dsk li{
+header #navigation-dsk li {
+    cursor: pointer;
+}
 
+header #navigation-dsk li a {
+    display: grid;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s all ease;
+    height: 80px;
+    place-items: center;
+    border-bottom: 4px #00000000 solid;
+    position: relative;
+    top: -3px;
+    border-radius: 3px;
+}
+
+header #navigation-dsk li a:hover {
+    border-bottom: 4px var(--color-secondary) solid;
+    top: 0px;
+}
+
+header #navigation-dsk #switch-themes-dsk {
+    display: grid;
+    transition: 0.2s all ease;
+    width: 25px;
+    height: 70px;
+    position: relative;
+    border-bottom: 4px #00000000 solid;
+    position: relative;
+    top: -2px;
+    background-image: url(/assets/img/icons/brightness-up.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 3px;
+}
+
+header #navigation-dsk #switch-themes-dsk:hover {
+    border-bottom: 4px var(--color-secondary) solid;
+    transform: scale(1.1);
 }
