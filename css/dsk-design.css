@@ -20,7 +20,14 @@ html {
 body {
     width: 100%;
     margin: 0 auto;
-    max-width: 1500px;
+}
+
+
+
+@media (min-height: 400px) {
+    header {
+        background-color: #d32222;
+    }
 }
 
 header {
@@ -29,9 +36,21 @@ header {
     justify-content: space-between;
     padding: 10px 5%;
     height: 75px;
-    background-color: #00000010;
+    background-color: #00000000; /* Transparente por defecto */
     position: sticky;
     top: 0;
+    width: 100%;
+    transition: 0.2s all ease;
+}
+
+
+nav {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 header #home {
@@ -57,7 +76,7 @@ header #navigation-dsk {
     width: 75%;
     justify-content: flex-end;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 header #navigation-dsk li {
@@ -97,7 +116,7 @@ header #navigation-dsk #switch-themes-dsk {
     stroke-width: 2;
 }
 
-#switch-themes-dsk:hover{
+#switch-themes-dsk:hover {
     transform: scale(1.15);
 }
 
@@ -127,6 +146,6 @@ header #navigation-dsk #switch-themes-dsk {
     transition: 0.2s all ease;
 }
 
-#theme-options .theme:hover{
+#theme-options .theme:hover {
     background-color: #202124;
 }
