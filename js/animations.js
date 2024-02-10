@@ -17,10 +17,10 @@ document.getElementById('switch-themes-dsk').addEventListener('click', function 
 // Agregar un evento de clic al documento
 document.addEventListener('click', function (event) {
     let themes = document.getElementById('theme-options');
-    let targetElement = event.target; // Elemento en el que se hizo clic
+    let targetElement = event.target; // Elemento en el que se hizo click
 
     // Verificar si el elemento en el que se hizo clic no es el menú ni el botón de cambiar temas
-    if (targetElement !== themes && targetElement.id !== 'switch-themes-dsk') {
+    if (targetElement !== themes) {
         themes.style.opacity = '0';
         setTimeout(function () {
             themes.style.transform = 'scale(0)';
