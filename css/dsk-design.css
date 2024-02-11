@@ -13,6 +13,10 @@
     color-scheme: dark;
 }
 
+::selection{
+    background-color: #202124;
+}
+
 html {
     font-family: var(--font-main);
 
@@ -41,7 +45,8 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
-    transition: 0.2s all ease;
+    border-bottom: 1px solid #ffffff00;
+    transition: 0.5s all ease;
 }
 
 
@@ -93,14 +98,14 @@ header #navigation-dsk li a {
     transition: 0.2s all ease;
     height: 80px;
     place-items: center;
-    border-bottom: 4px #00000000 solid;
+    border-bottom: 3.5px #00000000 solid;
     position: relative;
     top: -3px;
     border-radius: 3px;
 }
 
 header #navigation-dsk li a:hover {
-    border-bottom: 4px var(--color-secondary) solid;
+    border-bottom: 3.5px var(--color-secondary) solid;
     top: 0px;
 }
 
@@ -149,4 +154,11 @@ header #navigation-dsk #switch-themes-dsk {
 
 #theme-options .theme:hover {
     background-color: #202124;
+}
+
+.sexo{
+    background-color: #0000001b;
+    transition: 0.5s all ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.136);
+    backdrop-filter: blur(1px);
 }

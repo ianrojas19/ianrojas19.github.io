@@ -1,29 +1,39 @@
-document.getElementById('switch-themes-dsk').addEventListener('click', function (event) {
-    event.stopPropagation(); // Evitar que el clic en el botón propague al documento
+$(document).ready(function () {
+    // Animaciones para el cambio de temas en desktop
+    $('#switch-themes-dsk').click(function (event) {
+        event.stopPropagation();
+        let themes = $('#theme-options');
 
-    let themes = document.getElementById('theme-options');
+        if (themes.css('transform') === 'scale(1)') {
+            themes.css('opacity', '0');
+            setTimeout(function () {
+                themes.css('transform', 'scale(0)');
+            }, 100);
+        } else {
+            themes.css('opacity', '1');
+            themes.css('transform', 'scale(1)');
+        }
+    });
 
-    if (themes.style.transform === 'scale(1)') {
-        themes.style.opacity = '0';
+    $(document).click(function () {
+        let themes = $('#theme-options');
+        themes.css('opacity', '0');
         setTimeout(function () {
-            themes.style.transform = 'scale(0)';
+            themes.css('transform', 'scale(0)');
         }, 100);
-    } else {
-        themes.style.opacity = '1';
-        themes.style.transform = 'scale(1)';
-    }
-});
+    });
 
-// Agregar un evento de clic al documento
-document.addEventListener('click', function (event) {
-    let themes = document.getElementById('theme-options');
-    let targetElement = event.target; // Elemento en el que se hizo click
+    // Animacion para estilo del header al scrollear
+    const header = $('header');
 
-    // Verificar si el elemento en el que se hizo clic no es el menú ni el botón de cambiar temas
-    if (targetElement !== themes) {
-        themes.style.opacity = '0';
-        setTimeout(function () {
-            themes.style.transform = 'scale(0)';
-        }, 100);
-    }
+    $(document).scroll(function () {
+        // Obtener la cantidad de desplazamiento vertical
+        let scrollTop = $(window).scrollTop();
+
+        if (scrollTop > 100) {
+            header.addClass('sexo');
+        } else {
+            header.removeClass('sexo');
+        }
+    });
 });
