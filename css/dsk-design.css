@@ -10,6 +10,7 @@
     --font-main: 'Open Sans', sans-serif;
     --color-primary: #202124;
     --color-secondary: #c8231b;
+    color-scheme: dark;
 }
 
 html {
