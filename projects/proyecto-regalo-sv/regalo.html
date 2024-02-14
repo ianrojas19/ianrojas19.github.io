@@ -10,11 +10,12 @@
 
 <body>
     <!-- partial:index.partial.html -->
+    <script src="/projects/proyecto-regalo-sv/regalo.js"></script>
 
     <body class="container">
-        <div class="night"></div>
+        <div class="night" style="display: none;"></div>
         <div class="flowers">
-            <div id="msg-y" class="flower flower--1">
+            <div id="msg-y" class="flower flower--1" onclick="msgy()">
                 <div class="flower__leafs flower__leafs--1">
                     <div class="flower__leaf flower__leaf--1 yellow-fl"></div>
                     <div class="flower__leaf flower__leaf--2 yellow-fl"></div>
@@ -42,7 +43,7 @@
                 </div>
             </div>
 
-            <div id="msg-w" class="flower flower--2">
+            <div id="msg-w" class="flower flower--2" onclick="msgw()">
                 <div class="flower__leafs flower__leafs--2">
                     <div class="flower__leaf flower__leaf--1 white-fl"></div>
                     <div class="flower__leaf flower__leaf--2 white-fl"></div>
@@ -68,7 +69,7 @@
                 </div>
             </div>
 
-            <div id="msg-b" class="flower flower--3">
+            <div id="msg-b" class="flower flower--3" onclick="msgb()">
                 <div class="flower__leafs flower__leafs--3">
                     <div class="flower__leaf flower__leaf--1 blue-fl"></div>
                     <div class="flower__leaf flower__leaf--2 blue-fl"></div>
@@ -93,7 +94,7 @@
                     <div class="flower__line__leaf flower__line__leaf--4"></div>
                 </div>
             </div>
-            <div id="msg-r" class="flower flower--4">
+            <div id="msg-r" class="flower flower--4" onclick="msgr()">
                 <div class="flower__leafs flower__leafs--3">
                     <div class="flower__leaf flower__leaf--1 red-fl"></div>
                     <div class="flower__leaf flower__leaf--2 red-fl"></div>
@@ -111,6 +112,9 @@
                     <div class="flower__light flower__light--8"></div>
 
                 </div>
+
+                <a id="continue" href="/projects/proyecto-regalo-sv/final.html">Final</a>
+
                 <div class="flower__line">
                     <div class="flower__line__leaf flower__line__leaf--1"></div>
                     <div class="flower__line__leaf flower__line__leaf--2"></div>
@@ -334,7 +338,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="bubbles">
             <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
                     <title>heart22</title>
@@ -481,7 +485,6 @@
             <div id="message">
                 <h2 id="msg-title"></h2>
                 <p id="msg-text"></p>
-                <span id="msg-back">Volver</span>
             </div>
 
 
@@ -496,12 +499,8 @@
                 </svg>
                 <span>Clickea una flor para ver un mensajito corrongo.</span>
             </div>
+
+
     </body>
-
-
-    <!-- partial -->
-    <script src="/projects/proyecto-regalo-sv/regalo.js"></script>
-
-</body>
 
 </html>

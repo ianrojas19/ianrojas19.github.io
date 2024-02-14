@@ -20,15 +20,7 @@ body {
     perspective: 1000px;
 }
 
-.night {
-    position: fixed;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 100%;
-   background-color: #101010;
-}
+
 
 .flowers {
     position: relative;
@@ -2212,9 +2204,7 @@ body {
 
 
 
-.yellow-fl {
-    
-}
+.yellow-fl {}
 
 
 .red-fl {
@@ -2249,11 +2239,11 @@ body {
     z-index: 100;
 }
 
-.flower{
+.flower {
     cursor: pointer;
 }
 
-.guide{
+.guide {
     position: fixed;
     top: 20px;
     left: 20px;
@@ -2273,15 +2263,60 @@ body {
     align-items: center;
 }
 
-#message{
-    display: flex;
-    width: 97%;
+#message {
+    display: none;
+    width: 500px;
     min-height: 580px;
-    background-color: white;
-    border-radius: 10px;
-    border: 1px solid black;
+    background-color: #26282a;
+    border-radius: 15px;
+    border: 2px solid rgb(187, 187, 187);
     margin: 10px auto !important;
     z-index: 2000 !important;
     position: fixed;
     left: 20px;
+    margin: auto;
+    padding: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all ease;
+}
+
+#message p {
+    max-width: 700px;
+    line-height: 1.7;
+    margin: 0 auto;
+}
+
+#message span {
+    cursor: pointer !important;
+    display: flex;
+    place-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #17436f;
+    margin: 0 auto;
+    padding: 25px 40px;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+#continue {
+    position: fixed;
+    right: -650px;
+    bottom: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    color: white;
+    font-weight: 600;
+    background-color: #3f3f3f;
+    text-decoration: none;
+    font-family: sans-serif;
+    border-radius: 10px;
 }
