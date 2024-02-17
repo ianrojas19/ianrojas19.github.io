@@ -23,11 +23,11 @@ function messageAppear(message, tittle) {
     setTimeout(function () {
         messageContainer.style.opacity = '0';
 
-    }, 10000);
+    }, 20000);
 
     setTimeout(function () {
         messageContainer.style.display = 'none';
-    }, 11000)
+    }, 21000)
 
 }
 
