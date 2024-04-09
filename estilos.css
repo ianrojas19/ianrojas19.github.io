@@ -658,7 +658,32 @@ footer .nav-item a {
     color: white !important;
 }
 
+.promos-float-item {
+    margin: 10px 1% 10px 0;
+    display: inline-block;
+}
 
+.promos-float-item a img{
+height: 150px;
+width: auto;
+}
+
+.promos-float-list {
+    display: flex;
+    gap: 0px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-y: auto;
+    overflow-x: scroll;
+    scrollbar-width: 0px;
+    overflow-y: hidden;
+}
+
+.promos-float-list::-webkit-scrollbar{
+    display: none;
+}
 .footer-icons {
     display: flex;
     flex-wrap: wrap;
@@ -692,6 +717,8 @@ footer .nav-item a {
     .sepa{
         display: block;
     }
+
+
 
     main #sidebar {
         position: fixed;
