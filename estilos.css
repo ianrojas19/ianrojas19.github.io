@@ -599,6 +599,10 @@ main #sidebar-options {
     font-weight: 600;
 }
 
+.sepa{
+    display: none;
+}
+
 .regbtn{
     display: flex;
     width: 150px;
@@ -683,6 +687,10 @@ footer .nav-item a {
         color: #0b5aa0;
         font-size: 16px;
         padding: 7px 10px;
+    }
+
+    .sepa{
+        display: block;
     }
 
     main #sidebar {
