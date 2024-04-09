@@ -284,17 +284,6 @@ main #sidebar::-webkit-scrollbar-thumb:hover {
     display: block;
 }
 
-/* Firefox Scrollbar */
-main #sidebar {
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: #1f5587 #083a67; /* For Firefox */
-}
-
-main #sidebar:hover {
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: #1f5587 #083a67; /* For Firefox */
-}
-
 /* IE Scrollbar */
 main #sidebar {
     -ms-overflow-style: none; /* Hides scrollbar on IE */
@@ -408,7 +397,7 @@ main #sidebar-options {
 
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1100px) {
     #games {
         display: none !important;
     }
@@ -423,5 +412,24 @@ main #sidebar-options {
         color: #0b5aa0;
         font-size: 16px;
         padding: 7px 10px;
+    }
+
+    main #sidebar {
+        position: fixed;
+        top: 0;
+        padding-top: 40px !important;
+        height: 100%;
+        width: 100%;
+        max-width: none;
+        background-color: #06213c !important;
+        overflow-y: auto;
+        overflow-x: hidden;
+        transition: 1s all ease;
+        z-index: 11;
+        right: 100%;
+    }
+
+    .help{
+        display: none;
     }
 }
