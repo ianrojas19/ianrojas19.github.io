@@ -10,6 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="/dependencies/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .text-info {
+            color: #06466B !important;
+        }
+
+        .form-check-label {
+            color: #095a89 !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -882,27 +891,169 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Real Madrid</td>
+                                <td>Colorado Rapids</td>
                                 <td>3</td>
                                 <td>1</td>
-                                <td>Barcelona</td>
+                                <td>Inter Miami</td>
                             </tr>
                             <tr>
-                                <td>Manchester United</td>
+                                <td>LA Galaxy</td>
                                 <td>2</td>
                                 <td>2</td>
-                                <td>Liverpool</td>
+                                <td>Los Angeles F.C</td>
                             </tr>
                             <tr>
-                                <td>Juventus</td>
+                                <td>Austin FC</td>
                                 <td>1</td>
                                 <td>0</td>
-                                <td>AC Milan</td>
+                                <td>Arsenal</td>
                             </tr>
                             <!-- Añade más filas según sea necesario -->
                         </tbody>
                     </table>
                 </div>
+
+                <div class="right register-form-wrap col-12 mx-auto mt-5 bg-white ">
+                    <h3 class="txt-center bp-font color-blue margin2-top margin-bottom width100 left">Create your
+                        BetPhoenix Account</h3>
+                    <p>It's <strong>free</strong> and only takes a <strong>few minutes</strong></p>
+                    <div class="margin-top margin-bottom margin2-left margin2-right left ts">
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                            crossorigin="anonymous" type="text/javascript"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.1.0/fingerprint2.min.js"
+                            type="text/javascript"></script>
+                        <script src="https://mpsnare.iesnare.com/snare.js" type="text/javascript"></script>
+                        <script src="https://scripts.bookcdn.net/js/ext/jquery.numeric.js"
+                            type="text/javascript"></script>
+                        <script type="text/javascript">
+                            var io_bbout_element_id = 'ioBB';
+                            var io_install_stm = false;
+                            var io_exclude_stm = 12;
+                            var io_install_flash = false;
+                            var io_enable_rip = true;
+                        </script>
+                        <input id="ioBB" type="hidden" name="ioBB">
+                        <script type="text/javascript">
+                            $('.signup-container').bpsignup(signupConfig, function () {
+                                $('#idFullname').val('Joe Foo');
+                            });
+                        </script>
+                        <div class="signup-container px-3">
+                            <form style="border-radius: 10px;">
+                                <div class="form-row form-group required" id="row-fullname"><label for="idFullname">Full
+                                        Name</label><input type="text" id="idFullname" placeholder="Full Name"
+                                        maxlength="150" class="form-control"></div>
+                                <div class="form-row form-group required" id="row-email"><label
+                                        for="idEmail">Email</label><input type="text" id="idEmail" placeholder="Email"
+                                        maxlength="100" class="form-control"><small class="form-text text-info">You'll
+                                        need access to this email address to verify your account.</small></div>
+                                <div class="form-row form-group required" id="row-country"><label
+                                        for="idCountry">Country</label><select id="idCountry" class="form-control">
+                                        <option value="">Select your country</option>
+                                        <option value="AR" data-calling-code="54" data-sample-number="1123456789">
+                                            Argentina</option>
+                                        <option value="BO" data-calling-code="591" data-sample-number="22123456">Bolivia
+                                        </option>
+                                        <option value="BR" data-calling-code="55" data-sample-number="1123456789">Brazil
+                                        </option>
+                                        <option value="BZ" data-calling-code="501" data-sample-number="2221234">Belize
+                                        </option>
+                                        <option value="CA" data-calling-code="1" data-sample-number="5062345678">Canada
+                                        </option>
+                                        <option value="CL" data-calling-code="56" data-sample-number="221234567">Chile
+                                        </option>
+                                        <option value="CN" data-calling-code="86" data-sample-number="1012345678">China
+                                        </option>
+                                        <option value="CO" data-calling-code="57" data-sample-number="12345678">Colombia
+                                        </option>
+                                        <option value="DO" data-calling-code="1" data-sample-number="8092345678">
+                                            Dominican Republic</option>
+                                        <option value="EC" data-calling-code="593" data-sample-number="22123456">Ecuador
+                                        </option>
+                                        <option value="GT" data-calling-code="502" data-sample-number="22456789">
+                                            Guatemala</option>
+                                        <option value="HN" data-calling-code="504" data-sample-number="22123456">
+                                            Honduras</option>
+                                        <option value="JM" data-calling-code="1" data-sample-number="8765230123">Jamaica
+                                        </option>
+                                        <option value="JP" data-calling-code="81" data-sample-number="312345678">Japan
+                                        </option>
+                                        <option value="KH" data-calling-code="855" data-sample-number="23756789">
+                                            Cambodia</option>
+                                        <option value="KR" data-calling-code="82" data-sample-number="22123456">South
+                                            Korea</option>
+                                        <option value="LA" data-calling-code="856" data-sample-number="21212862">Laos
+                                        </option>
+                                        <option value="MX" data-calling-code="52" data-sample-number="2001234567">Mexico
+                                        </option>
+                                        <option value="NI" data-calling-code="505" data-sample-number="21234567">
+                                            Nicaragua</option>
+                                        <option value="OM" data-calling-code="968" data-sample-number="23123456">Oman
+                                        </option>
+                                        <option value="PA" data-calling-code="507" data-sample-number="2001234">Panama
+                                        </option>
+                                        <option value="PE" data-calling-code="51" data-sample-number="11234567">Peru
+                                        </option>
+                                        <option value="PH" data-calling-code="63" data-sample-number="21234567">
+                                            Philippines</option>
+                                        <option value="PR" data-calling-code="1" data-sample-number="7872345678">Puerto
+                                            Rico</option>
+                                        <option value="PY" data-calling-code="595" data-sample-number="212345678">
+                                            Paraguay</option>
+                                        <option value="SG" data-calling-code="65" data-sample-number="61234567">
+                                            Singapore</option>
+                                        <option value="SV" data-calling-code="503" data-sample-number="21234567">El
+                                            Salvador</option>
+                                        <option value="TH" data-calling-code="66" data-sample-number="21234567">Thailand
+                                        </option>
+                                        <option value="TW" data-calling-code="886" data-sample-number="221234567">Taiwan
+                                        </option>
+                                        <option value="US" data-calling-code="1" data-sample-number="2015550123">United
+                                            States</option>
+                                        <option value="UY" data-calling-code="598" data-sample-number="21231234">Uruguay
+                                        </option>
+                                        <option value="VE" data-calling-code="58" data-sample-number="2121234567">
+                                            Venezuela</option>
+                                        <option value="VN" data-calling-code="84" data-sample-number="2101234567">
+                                            Vietnam</option>
+                                        <option value="YE" data-calling-code="967" data-sample-number="1234567">Yemen
+                                        </option>
+                                    </select><small class="form-text text-info">We only allow new registration from the
+                                        above list of countries. Detected country: <strong>Costa Rica</strong>.</small>
+                                </div>
+                                <div class="form-row form-group required" id="row-phone"><label for="idCountry">Phone
+                                        (Cellphone preferred)</label>
+                                    <div class="input-group">
+                                        <input type="text" id="idPhone" placeholder="" maxlength="11"
+                                            class="form-control">
+                                    </div><small class="form-text text-info">Only enter your national number (without
+                                        country calling code and leading zero). <strong>Only digits
+                                            allowed</strong>.</small>
+                                </div>
+                                <div class="form-row form-group" id="row-age">
+                                    <div class="form-check custom-control custom-checkbox"><input type="checkbox"
+                                            id="idAge" class="custom-control-input form-check-input is-valid"><label
+                                            class="custom-control-label form-check-label" for="idAge">Confirm that I am
+                                            18 years old or older.</label></div>
+                                </div>
+                                <div class="form-row form-group" style="margin-top: -15px;" id="row-tos">
+                                    <div class="form-check custom-control custom-checkbox"><input type="checkbox"
+                                            id="idTos" class="custom-control-input form-check-input is-valid"><label
+                                            class="custom-control-label form-check-label" for="idTos">Agree to Terms
+                                            &amp; Conditions. <a
+                                                href="https://www.betphoenix.ag/rules/general/terms-and-conditions"
+                                                onclick="window.open(this.href);return false;">Click to view</a></label>
+                                    </div>
+                                </div>
+                                <button class="btn regbtn" type="submit">Submit</button>
+                                <br><br>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <br><br><br>
             </div>
 
 
@@ -910,52 +1061,34 @@
             <div class="container-fluid footerp">
                 <footer class="row p-5 mt-3 gap-4">
                     <div class="fot-sec col-xl-3 col-lg-3 col-md-5 col-sm-6 col-12 mb-3">
-                        <h5>Store</h5>
+                        <h5>Contact Us</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/store">Complete
-                                    Skateboards</a></li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/store">Decks</a>
+                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/store">
+                                    Casino Support: 1-888.416-2642</a></li>
+                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/">Wagering:
+                                    1-888-238-8018</a>
                             </li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/store">Trucks</a>
+                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/">English:
+                                    1-877-717-7747</a>
                             </li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/store">Wheels</a>
-                            </li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/store">Griptapes</a></li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/store">Bearings</a></li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/store">Hardware
-                                    &amp;
-                                    Tools</a>
+                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/">Vietnamese:
+                                    1-888-378-0888</a>
                             </li>
                         </ul>
                     </div>
 
                     <div class="fot-sec col-xl-3 col-lg-3 col-md-5 col-sm-6 col-12 mb-3">
-                        <h5>Store</h5>
+                        <h5>Follow Us</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/store">Complete
-                                    Skateboards</a></li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/store">Decks</a>
+                            <li class="nav-item mb-2 d-flex gap-2">
+                                <a class="nav-link p-0 text-body-secondary" href="/">TikTok</a>
                             </li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/store">Trucks</a>
-                            </li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/store">Wheels</a>
-                            </li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/store">Griptapes</a></li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/store">Bearings</a></li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/store">Hardware
-                                    &amp;
-                                    Tools</a>
-                            </li>
+                            <li class="nav-item mb-2 d-flex gap-2">
+                                <a class="nav-link p-0 text-body-secondary" href="/">Facebook</a></li>
+                            <li class="nav-item mb-2 d-flex gap-2">
+                                <a class="nav-link p-0 text-body-secondary" href="/">Instagram</a></li>
+                            <li class="nav-item mb-2 d-flex gap-2">
+                                <a class="nav-link p-0 text-body-secondary" href="/">X(Twitter)</a></li>
                         </ul>
                     </div>
 
@@ -966,8 +1099,7 @@
                             <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
                                     href="/store">Store</a>
                             </li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/contact">Contact
+                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/">Contact
                                     Us</a></li>
                             <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/log-in">My
                                     Account</a></li>
@@ -983,19 +1115,16 @@
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/store">Complete
                                     Skateboards</a></li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/store">Decks</a>
+                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/">Decks</a>
                             </li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/store">Trucks</a>
+                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/">Trucks</a>
                             </li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/store">Wheels</a>
+                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/">Wheels</a>
                             </li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/store">Griptapes</a></li>
-                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"
-                                    href="/store">Bearings</a></li>
+                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/">Griptapes</a>
+                            </li>
+                            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/">Bearings</a>
+                            </li>
                             <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="/store">Hardware
                                     &amp;
                                     Tools</a>
@@ -1004,24 +1133,21 @@
                     </div>
 
                     <div class="footer-icons pt-3">
-                        <div class="footer-icons-item"><img
-                                src="img/logo-gc.png"></div>
-                        <div class="footer-icons-item"><img alt="SSL"
-                                src="img/secure_ssl_encryption_icon.svg?v=1"
+                        <div class="footer-icons-item"><img src="img/logo-gc.png"></div>
+                        <div class="footer-icons-item"><img alt="SSL" src="img/secure_ssl_encryption_icon.svg?v=1"
                                 width="100"></div>
-                        <div class="footer-icons-item"><img alt="+18"
-                                src="img/icon-21.svg?v=1" width="40"></div>
-                        <div class="footer-icons-item"><img alt="EST 2006"
-                                src="img/est_2006_icon.svg?v=1" width="40"></div>
-                        <div class="footer-icons-item"><img alt="Betphoenix Bitcoin"
-                                src="img/bitcoin_accepted_icon.svg"
+                        <div class="footer-icons-item"><img alt="+18" src="img/icon-21.svg?v=1" width="40"></div>
+                        <div class="footer-icons-item"><img alt="EST 2006" src="img/est_2006_icon.svg?v=1" width="40">
+                        </div>
+                        <div class="footer-icons-item"><img alt="Betphoenix Bitcoin" src="img/bitcoin_accepted_icon.svg"
                                 width="100"></div>
-                        <div class="footer-icons-item"><img alt="Betphoenix Bitcoin"
-                                src="img/icon-ga.png" width="40"></div>
+                        <div class="footer-icons-item"><img alt="Betphoenix Bitcoin" src="img/icon-ga.png" width="40">
+                        </div>
                     </div>
 
                     <p class="copyright mb-0">© 2024 Betphoenix. All rights reserved.</p>
                 </footer>
+                <br><br>
             </div>
 
 

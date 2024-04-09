@@ -596,10 +596,38 @@ main #sidebar-options {
     cursor: pointer;
     background-color: #06213c;
     transition: 0.2s all ease;
+    font-weight: 600;
 }
+
+.regbtn{
+    display: flex;
+    width: 150px;
+    padding: 10px 30px !important;
+    background-color: #002a3f !important;
+    color: white !important;
+    transition: 0.3s all ease;
+}
+
+.regbtn:hover{
+    background-color: #05486a !important; 
+}
+
 
 .league-slc {
     background-color: #06466B;
+}
+
+.form-row{
+    margin-bottom: 20px;
+}
+
+.text-info{
+    color: #06466B !important;
+}
+
+.ts{
+    width: 100%;
+    text-align: start !important;
 }
 
 .sportsbook h3 {
