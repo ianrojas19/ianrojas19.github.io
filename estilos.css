@@ -263,7 +263,6 @@ main #sidebar {
     background-color: #06213c !important;
     overflow-y: auto;
     overflow-x: hidden;
-    right: 100%;
 }
 
 main #sidebar #close-sidebar {
