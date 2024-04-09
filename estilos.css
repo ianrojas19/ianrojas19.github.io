@@ -265,6 +265,17 @@ main #sidebar {
     overflow-x: hidden;
 }
 
+main #page-content {
+    padding-top: 125px !important;
+    height: 100%;
+    width: 100%;
+    background-color: #fbfbfb;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: white;
+    padding-left: 330px;
+}
+
 main #sidebar #close-sidebar {
     display: none !important;
 }
@@ -311,6 +322,47 @@ main #sidebar::-ms-scrollbar-thumb:hover {
     background-color: #1f5587;
 }
 
+/* Webkit Scrollbar */
+main #page-content::-webkit-scrollbar {
+    width: 16px;
+}
+
+main #page-content::-webkit-scrollbar-track {
+    background: #083a67;
+}
+
+main #page-content::-webkit-scrollbar-thumb {
+    background-color: #1f5587;
+    border-radius: 0px;
+    display: inline;
+}
+
+main #page-content::-webkit-scrollbar-thumb:hover {
+    display: block;
+}
+
+/* IE Scrollbar */
+main #page-content {
+    -ms-overflow-style: none;
+    /* Hides scrollbar on IE */
+}
+
+main #page-content::-ms-scrollbar {
+    width: 16px;
+}
+
+main #page-content::-ms-scrollbar-track {
+    background: #083a67;
+}
+
+main #page-content::-ms-scrollbar-thumb {
+    background-color: #1f5587;
+    border-radius: 0px;
+}
+
+main #page-content::-ms-scrollbar-thumb:hover {
+    background-color: #1f5587;
+}
 
 
 .vip {
@@ -414,7 +466,7 @@ main #sidebar-options {
     bottom: 0;
 }
 
-.nav-bottom{
+.nav-bottom {
     display: none;
 }
 
@@ -443,7 +495,7 @@ main #sidebar-options {
         display: none !important;
     }
 
-    .nav-bottom{
+    .nav-bottom {
         display: flex;
     }
 
@@ -489,5 +541,10 @@ main #sidebar-options {
         margin: 0 auto;
         cursor: pointer;
         transition: 0.2s all ease !important;
+    }
+
+    main #page-content {
+        width: 100%;
+        padding-left: 0px;
     }
 }
