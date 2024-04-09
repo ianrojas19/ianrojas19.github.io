@@ -407,12 +407,15 @@ main #sidebar-options {
 }
 
 .nav-bottom {
-    display: none;
     width: 100%;
     background-color: #06213c;
     height: 60px;
     position: fixed;
     bottom: 0;
+}
+
+.nav-bottom{
+    display: none;
 }
 
 .nbb-item {
