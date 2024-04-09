@@ -265,6 +265,10 @@ main #sidebar {
     overflow-x: hidden;
 }
 
+main #sidebar #close-sidebar {
+    display: none !important;
+}
+
 /* Webkit Scrollbar */
 main #sidebar::-webkit-scrollbar {
     width: 16px;
@@ -286,7 +290,8 @@ main #sidebar::-webkit-scrollbar-thumb:hover {
 
 /* IE Scrollbar */
 main #sidebar {
-    -ms-overflow-style: none; /* Hides scrollbar on IE */
+    -ms-overflow-style: none;
+    /* Hides scrollbar on IE */
 }
 
 main #sidebar::-ms-scrollbar {
@@ -377,7 +382,7 @@ main #sidebar-options {
     border-radius: 10px;
 }
 
-.accordion-redirect svg{
+.accordion-redirect svg {
     position: relative;
     top: -2px;
 }
@@ -391,8 +396,14 @@ main #sidebar-options {
     text-decoration: none;
 }
 
-.opt-div{
+.opt-div {
     margin: 0.7rem 0;
+}
+
+#close-menu-btn {
+    display: flex;
+    width: 20px;
+    height: 20px;
 }
 
 
@@ -402,7 +413,7 @@ main #sidebar-options {
         display: none !important;
     }
 
-    header img{
+    header img {
         width: 130px;
     }
 
@@ -417,19 +428,32 @@ main #sidebar-options {
     main #sidebar {
         position: fixed;
         top: 0;
-        padding-top: 40px !important;
+        padding-top: 10px !important;
         height: 100%;
         width: 100%;
         max-width: none;
         background-color: #06213c !important;
         overflow-y: auto;
         overflow-x: hidden;
-        transition: 1s all ease;
-        z-index: 11;
         right: 100%;
+        z-index: 11;
+        transition: 0.5s all ease;
     }
 
-    .help{
+    .help {
         display: none;
+    }
+
+    main #sidebar #close-sidebar {
+        display: flex !important;
+        padding-bottom: 10px;
+    }
+
+    .vip {
+        width: 95%;
+        max-width: none;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: 0.2s all ease !important;
     }
 }
