@@ -1,0 +1,403 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+header {
+    height: 95px !important;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    list-style: none;
+    border-bottom: 2px solid #0e3657;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+header img {
+    width: 170px;
+    padding-bottom: 10px;
+}
+
+.reg {
+    background: #094478 !important;
+    color: white !important;
+    border: 0;
+    transition: 0.3s all ease !important;
+}
+
+.reg:hover {
+    background-color: #105fa4 !important;
+}
+
+
+.log .btn {
+    width: fit-content;
+    padding: 15px 25px;
+    font-weight: 700;
+    color: #0b5aa0;
+    font-size: 18px;
+}
+
+#games a {
+    color: #0d508b;
+    font-weight: 600;
+    text-decoration: none !important;
+    max-width: fit-content;
+    height: 100px;
+    border-bottom: 3px solid rgba(255, 0, 0, 0);
+    transition: 0.2s all ease;
+    font-size: 18px;
+}
+
+#games a:hover {
+    border-bottom: 3px solid #d81818;
+}
+
+.livecasino:hover {
+    cursor: pointer;
+}
+
+.livecasino {
+    animation: colorChange 0.8s infinite alternate;
+}
+
+.sports {
+    stroke: #094478;
+    transition: 0.2s all ease;
+}
+
+.sports:hover {
+    stroke: #d81818;
+}
+
+@keyframes colorChange {
+    0% {
+        fill: #0b1721;
+        /* Comienza con color azul */
+    }
+
+    100% {
+        fill: #d81818;
+        /* Termina con color rojo */
+    }
+}
+
+.race {
+    fill: #094478;
+    transition: 0.2s all ease;
+}
+
+.race:hover {
+    fill: #d81818;
+}
+
+
+#games img {
+    width: 20px;
+}
+
+.help {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #083a67;
+    padding: 15px;
+    border-radius: 15000px;
+    margin: 2.5% 2%;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.help svg {
+    fill: white;
+    width: 30px;
+}
+
+.help:hover {
+    background-color: #0d508b;
+}
+
+main {
+    padding: 0 !important;
+    height: 100vh;
+}
+
+main #sidebar {
+    position: fixed;
+    top: 0;
+    padding-top: 125px !important;
+    height: 100%;
+    width: 300px;
+    max-width: 300px;
+    background-color: #06213c !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+main #sidebar::-webkit-scrollbar {
+    width: 16px;
+    /* Adjust scrollbar width */
+}
+
+main #sidebar::-webkit-scrollbar-track {
+    background: #083a67;
+    /* Track color */
+}
+
+main #sidebar::-webkit-scrollbar-thumb {
+    background-color: #1f5587;
+    /* Thumb color */
+    border-radius: 0px;
+    /* Rounded corners for thumb */
+    display: inline;
+    /* Hide up/down arrows */
+}
+
+main #sidebar::-webkit-scrollbar-thumb:hover {
+    display: block;
+    /* Show thumb on hover (optional) */
+}
+
+main #page-content {
+    width: calc(100% - 300px);
+}
+
+
+.vip {
+    background-color: #06466B;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    transition: 0.2s all ease !important;
+}
+
+.vip svg {
+    position: relative;
+    top: -2px;
+}
+
+.vip:hover {
+    background-color: #ffa600;
+    filter: drop-shadow(0 0 0.6rem rgb(220, 123, 20));
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    background-color: #00000000;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: #00000000 !important;
+    box-shadow: #00000000;
+}
+
+main #sidebar-options {
+    background-color: #00000000 !important;
+    color: #eaeaea;
+    text-transform: uppercase;
+}
+
+.accordion-header {
+    text-transform: uppercase !important;
+}
+
+
+.accordion-button {
+    color: #eaeaea !important;
+    font-weight: 700;
+}
+
+.accordion-body {
+    color: #eaeaea;
+    gap: 1px;
+}
+
+.accordion-item a {
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.2s all ease;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.accordion-redirect svg{
+    position: relative;
+    top: -2px;
+}
+
+.accordion-item a:hover {
+    color: white;
+    background-color: #06466B;
+}
+
+.accordion-item a {
+    text-decoration: none;
+}
+
+.opt-div{
+    margin: 0.7rem 0;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    #games {
+        display: none !important;
+    }
+
+    header img{
+        width: 130px;
+    }
+
+    .log .btn {
+        width: fit-content;
+        font-weight: 700;
+        color: #0b5aa0;
+        font-size: 16px;
+        padding: 7px 10px;
+    }
+}
