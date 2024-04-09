@@ -263,6 +263,7 @@ main #sidebar {
     background-color: #06213c !important;
     overflow-y: auto;
     overflow-x: hidden;
+    right: 100%;
 }
 
 main #sidebar #close-sidebar {
@@ -407,7 +408,7 @@ main #sidebar-options {
 }
 
 .nav-bottom {
-    display: flex;
+    display: none;
     width: 100%;
     background-color: #06213c;
     height: 60px;
@@ -433,13 +434,15 @@ main #sidebar-options {
     background-color: #06466B;
 }
 
-.commit{}
-
 
 
 @media screen and (max-width:1100px) {
     #games {
         display: none !important;
+    }
+
+    .nav-bottom{
+        display: flex !important;
     }
 
     header img {
