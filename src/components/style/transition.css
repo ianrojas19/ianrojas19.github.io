@@ -1,0 +1,12 @@
+.full-embed {
+  view-transition-name: full-embed;
+}
+
+.full-title {
+  view-transition-name: full-title;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.3s;
+}
